@@ -5,6 +5,7 @@
     min-width: 100%;
     min-height: 100%;
 }
+
 .upper {
     grid-row: 1;
     grid-column: 1 / span 5;
@@ -16,16 +17,64 @@
 header {
     grid-row: 1;
     grid-column: 1 / span 4;
+    color: white;
 }
+
+
+header h1 {
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    box-shadow: none;
+}
+
 
 nav {
     grid-row: 1;
     grid-column: 5;
+    place-self: emd;
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    box-shadow: none;
+    padding: 14px 16px;
+}
+
+nav a:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+.selected {
+    color: black;
+    background-color: white;
+}
+
+a.selected:hover {
+    color: black;
+    background-color: white;
+    cursor: default;
 }
 
 main {
     grid-row: 2;
     grid-column: 2/ span 3;
+    place-self: center;
 }
 
 .lower {
@@ -39,14 +88,23 @@ main {
 footer {
     grid-row: 3;
     grid-column: 1/ span 4;
+    color: white;
+    align-self: center;
 }
 
 .social {
     grid-row: 3;
     grid-column: 5;
+    place-self: end;
+    line-height: 0;
 }
 
-html, body, #___gatsby, #___gatsby>div {
+html, body, #___gatsby, #___gatsby > div {
     width: 100%;
     height: 100%;
+}
+
+.fa-c {
+    background-color: white;
+    padding: 0 1px 0;
 }
