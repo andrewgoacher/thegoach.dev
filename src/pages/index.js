@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import PageLayout from '../components/layouts/pageLayout';
+
+// import { rhythm } from "../utils/typography"
 
 class Index extends React.Component {
   render() {
@@ -12,18 +12,17 @@ class Index extends React.Component {
     const siteTitle = data.site.siteMetadata.title
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <PageLayout location={this.props.location} title={siteTitle}>
         <SEO
           title="All posts"
           keywords={[`blog`, `Andrew Goacher`, `programming`, `the goach`, 'development']}
         />
-        <Bio />
         <h1>Index page!</h1>
 
         <p>
           Some content should be here
         </p>
-      </Layout>
+      </PageLayout>
     )
   }
 }
