@@ -9,29 +9,50 @@ class PageLayout extends React.Component {
     const {title, children} = this.props;
 
     return (
-      <div className="grid">
-        <header>
-          <h1>
-            <Avatar />
-            <Link to={`/`}>
-              {title}
-            </Link>
-          </h1>
-        </header>
-        <nav>
-          <Menu />
-        </nav>
+      <div className="layout">
+        <div className="upper">
+          <header>
+
+          </header>
+          <nav>
+
+          </nav>
+        </div>
         <main>
           {children}
         </main>
-        <footer>
-            © Andrew Goacher {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <div className="lower">
+          <footer>
+
+          </footer>
+          <div className="social">
+          </div>
+        </div>
       </div>
     );
   }
 }
 
 export default PageLayout;
+
+{/*<div className="grid">*/}
+  {/*<header>*/}
+    {/*<h1>*/}
+      {/*<Avatar />*/}
+      {/*<Link to={`/`}>*/}
+        {/*{title}*/}
+      {/*</Link>*/}
+    {/*</h1>*/}
+  {/*</header>*/}
+  {/*<nav>*/}
+    {/*<Menu />*/}
+  {/*</nav>*/}
+  {/*<main>*/}
+    {/*{children}*/}
+  {/*</main>*/}
+  {/*<footer>*/}
+    {/*© Andrew Goacher {new Date().getFullYear()}, Built with*/}
+    {/*{` `}*/}
+    {/*<a href="https://www.gatsbyjs.org">Gatsby</a>*/}
+  {/*</footer>*/}
+{/*</div>*/}
