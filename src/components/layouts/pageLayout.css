@@ -19,6 +19,7 @@ header {
     grid-column: 2 / span 3;
     color: white;
     justify-self: center;
+    align-self: center;
 }
 
 
@@ -59,17 +60,23 @@ nav a {
 nav a:hover {
     background-color: darkgrey;
     color: black;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
 
 .selected {
     color: black;
     background-color: white;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
 
 a.selected:hover {
     color: black;
     background-color: white;
     cursor: default;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
 
 main {
