@@ -35,6 +35,7 @@ class PageLayout extends React.Component {
           <i className="fab fa-gitlab fa-c fa-3x"></i>
           <i className="fab fa-bitbucket fa-c fa-3x"></i>
           <i className="fab fa-twitter fa-c fa-3x"></i>
+          <i className="fab fa-linkedin fa-c fa-3x"></i>
         </div>
       </div>
     )
