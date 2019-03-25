@@ -8,8 +8,8 @@ import PageLayout from '../components/layouts/pageLayout';
 
 class About extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+    // const { data } = this.props
+    // const siteTitle = data.site.siteMetadata.title
 
     return (
       <PageLayout location={this.props.location}>
