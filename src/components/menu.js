@@ -1,34 +1,38 @@
-import React from 'react';
+import React from "react"
 
-import { Link } from 'gatsby';
+import { Link } from "gatsby"
 
 class Menu extends React.Component {
+  createLink(name, path, location) {
+    let className = "";
+
+    if(location.pathname === path) {
+      className = "selected";
+    }
+
+    return (
+      <Link to={path} className={className}>
+        {name}
+      </Link>
+    );
+  }
+
   render() {
+    const { location } = this.props
     return (
       <ul>
-        <li>
-          <Link to={`/`} className="selected">
-            Home
-          </Link>
+         <li>
+          {this.createLink("Home", `/`, location)}
         </li>
         <li>
-          <Link to={`/about`}>
-            About
-          </Link>
+          {this.createLink("About", `/about`, location)}
         </li>
         <li>
-          <Link to={`/blog`}>
-            Blog
-          </Link>
-        </li>
-        <li>
-          <Link to={`/contact`}>
-            Contact
-          </Link>
+          {this.createLink("Blog", `/blog`, location)}
         </li>
       </ul>
-    );
+    )
   }
 }
 
-export default Menu;
+export default Menu

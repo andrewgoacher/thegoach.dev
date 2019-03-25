@@ -6,7 +6,7 @@ import PageLayout from '../components/layouts/pageLayout';
 
 // import { rhythm } from "../utils/typography"
 
-class Index extends React.Component {
+class About extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -14,10 +14,9 @@ class Index extends React.Component {
     return (
       <PageLayout location={this.props.location}>
         <SEO
-          title="Latest Posts"
-          keywords={[`blog`, `Andrew Goacher`, `programming`, `the goach`, 'development']}
+          title="About me"
         />
-        <h1>Index page!</h1>
+        <h1>About page!</h1>
 
         <p>
           Some content should be here
@@ -27,16 +26,16 @@ class Index extends React.Component {
   }
 }
 
-export default Index
+export default About
 //
 // export const pageQuery = graphql`
-//   query {
-//     site {
-//       siteMetadata {
-//         title
-//       }
+//     query {
+//         site {
+//             siteMetadata {
+//                 title
+//             }
+//         }
 //     }
-//   }
 // `
 /*
 #    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
