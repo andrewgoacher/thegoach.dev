@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://thegoach.dev/`,
     social: {
       twitter: `the_goach`,
+      linkedin: `andrewgoacher`
     },
     repos: {
       github: 'andrewgoacher',
