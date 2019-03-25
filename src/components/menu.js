@@ -21,7 +21,7 @@ class Menu extends React.Component {
     const { location } = this.props
     return (
       <ul>
-        <li>
+         <li>
           {this.createLink("Home", `/`, location)}
         </li>
         <li>

@@ -37,7 +37,7 @@ class BlogIndex extends React.Component {
 
     return (
       <PageLayout location={this.props.location}>
-        <SEO title="Blog Posts" />
+        <SEO title="All Posts" />
         <p>
           There are currently no posts to see here!
         </p>
