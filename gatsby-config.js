@@ -10,7 +10,7 @@ module.exports = {
     },
     repos: {
       github: 'andrewgoacher',
-      gitlab: 'andrewgiacher',
+      gitlab: 'andrewgoacher',
       bitbucket: 'agoacher'
     }
   },
