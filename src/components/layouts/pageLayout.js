@@ -3,11 +3,13 @@ import "./pageLayout.css"
 import { Link, graphql, StaticQuery } from "gatsby"
 import Menu from "../menu"
 
-const PageLayout = ({ title, children }) => {
+const PageLayout = ({ children, location }) => {
   return (
     <StaticQuery query={layoutQuery} render={data => {
       const social = data.site.siteMetadata.social
       const repos = data.site.siteMetadata.repos
+      const title = data.site.siteMetadata.title
+
       return (
         <div className="layout">
           <div className="upper"></div>
@@ -19,7 +21,7 @@ const PageLayout = ({ title, children }) => {
             </h1>
           </header>
           <nav>
-            <Menu/>
+            <Menu location={location}/>
           </nav>
           <main>
             {children}
@@ -60,6 +62,7 @@ export const layoutQuery = graphql`
     query {
         site {
             siteMetadata {
+                title,
                 social {
                     twitter,
                     linkedin
