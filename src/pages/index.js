@@ -4,12 +4,10 @@ import { Link, graphql } from "gatsby"
 import SEO from "../components/seo"
 import PageLayout from '../components/layouts/pageLayout';
 
-// import { rhythm } from "../utils/typography"
-
 class Index extends React.Component {
   render() {
-    // const { data } = this.props
-    // const siteTitle = data.site.siteMetadata.title
+    const { data } = this.props
+    const posts = data.allMarkdownRemark.edges
 
     return (
       <PageLayout location={this.props.location}>
@@ -17,41 +15,55 @@ class Index extends React.Component {
           title="Latest Posts"
           keywords={[`blog`, `Andrew Goacher`, `programming`, `the goach`, 'development']}
         />
-        <h1>Index page!</h1>
+        <h1>Newest Posts</h1>
 
-        <p>
-          Some content should be here
-        </p>
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <div key={node.fields.slug}>
+              <h3
+                style={{
+                  marginBottom: '10px',
+                }}
+              >
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h3>
+              <small>{node.frontmatter.date}</small>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.frontmatter.description || node.excerpt,
+                }}
+              />
+            </div>
+          )
+        })}
       </PageLayout>
     )
   }
 }
 
 export default Index
-//
-// export const pageQuery = graphql`
-//   query {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//   }
-// `
-/*
-#    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-#      edges {
-#        node {
-#          excerpt
-#          fields {
-#            slug
-#          }
-#          frontmatter {
-#            date(formatString: "MMMM DD, YYYY")
-#            title
-#            description
-#          }
-#        }
-#      }
-#    }
- */
+
+export const pageQuery = graphql`
+    query {
+        allMarkdownRemark(
+            sort: { fields: [frontmatter___date], order: DESC }
+             limit: 5) {
+            edges {
+                node {
+                    excerpt
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        date(formatString: "MMMM DD, YYYY")
+                        title
+#                        description
+                    }
+                }
+            }
+        }
+    }
+`
