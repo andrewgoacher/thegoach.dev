@@ -6,7 +6,7 @@ class Menu extends React.Component {
   createLink(name, path, location) {
     let className = "";
 
-    if(location.pathname === path) {
+    if(location.pathname.indexOf(path) === 0) {
       className = "selected";
     }
 
@@ -23,9 +23,6 @@ class Menu extends React.Component {
       <ul>
          <li>
           {this.createLink("Home", `/`, location)}
-        </li>
-        <li>
-          {this.createLink("About", `/about`, location)}
         </li>
         <li>
           {this.createLink("Blog", `/blog`, location)}
