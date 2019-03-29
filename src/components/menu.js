@@ -5,8 +5,13 @@ import { Link } from "gatsby"
 class Menu extends React.Component {
   createLink(name, path, location) {
     let className = "";
+    let loc = location.pathname;
 
-    if(location.pathname.indexOf(path) === 0) {
+    if(loc.length > 1 && loc.lastIndexOf('/') === loc.length -1 ) {
+      loc = loc.substring(0, loc.length-1);
+    }
+
+    if(loc === path) {
       className = "selected";
     }
 
