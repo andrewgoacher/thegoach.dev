@@ -3,15 +3,11 @@ import { Link, graphql } from "gatsby"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import Image from "gatsby-image"
 
 class Index extends React.Component {
   render() {
     const { data } = this.props
     const posts = data.allMarkdownRemark.edges
-    const { author } = data.site.siteMetadata
-    const style = { borderRadius: "100%", float: "left", marginRight: "15px", verticalAlign: "center" }
-    const imgStyle = { borderRadius: "50%" }
 
 
     return (
@@ -24,12 +20,6 @@ class Index extends React.Component {
         <h1>Hi I'm Andrew!</h1>
 
         <div>
-          <Image
-            fixed={data.charlie.childImageSharp.fixed}
-            alt={author}
-            style={style}
-            imgStyle={imgStyle}/>
-
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's
             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
@@ -42,12 +32,6 @@ class Index extends React.Component {
         </div>
 
         <div>
-          <Image
-            fixed={data.bigfoot.childImageSharp.fixed}
-            alt={author}
-            style={style}
-            imgStyle={imgStyle}/>
-
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's
@@ -62,12 +46,6 @@ class Index extends React.Component {
         </div>
 
         <div>
-          <Image
-            fixed={data.merlin.childImageSharp.fixed}
-            alt={author}
-            style={style}
-            imgStyle={imgStyle}/>
-
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's
@@ -114,32 +92,6 @@ export default Index
 
 export const pageQuery = graphql`
     query {
-        site {
-            siteMetadata {
-                author
-            }
-        }
-        charlie: file(absolutePath: {regex: "/charlie.jpg/"}) {
-            childImageSharp {
-                fixed(width: 100, height: 100) {
-                    ...GatsbyImageSharpFixed
-                }
-            }
-        }
-        merlin: file(absolutePath: {regex: "/merlin.jpg/"}) {
-            childImageSharp {
-                fixed(width: 100, height: 100) {
-                    ...GatsbyImageSharpFixed
-                }
-            }
-        }
-        bigfoot: file(absolutePath: {regex: "/bigfoot.jpg/"}) {
-            childImageSharp {
-                fixed(width: 100, height: 100) {
-                    ...GatsbyImageSharpFixed
-                }
-            }
-        }
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
             limit: 5) {

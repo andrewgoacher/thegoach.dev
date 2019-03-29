@@ -12,14 +12,11 @@ const Layout = ({ children, location }) => {
       const title = data.site.siteMetadata.title
 
       return (
-        <div className="layout">
-          <div className="upper"></div>
+        <div>
           <header>
-            <h1>
-              <Link to={`/`}>
-                {title}
-              </Link>
-            </h1>
+            <Link to={`/`}>
+              {title}
+            </Link>
           </header>
           <nav>
             <Menu location={location}/>
@@ -27,13 +24,12 @@ const Layout = ({ children, location }) => {
           <main>
             {children}
           </main>
-          <div className="lower"></div>
           <footer>
             © Andrew Goacher {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
-          <div className="social">
+          <div>
             <a href={`https://github.com/${repos.github}`} target="_blank">
               <i className="fa-c fab fa-github fa-3x"></i>
             </a>
