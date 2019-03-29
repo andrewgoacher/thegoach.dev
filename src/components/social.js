@@ -24,7 +24,7 @@ const MakeLink = (url, className) => {
     <a href={url} target="_blank" rel="noopener noreferrer">
       <i className={`fab fa-3x ${className}`}/>
     </a>
-  );
+  )
 }
 
 const Social = () => {
