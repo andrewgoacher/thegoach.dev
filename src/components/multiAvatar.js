@@ -1,7 +1,6 @@
-import React from 'react';
-import { StaticQuery} from "gatsby";
-import Image from 'gatsby-image';
-import { graphql} from "gatsby"
+import React from "react"
+import { StaticQuery, graphql } from "gatsby"
+import Image from "gatsby-image"
 
 const names = ["charlie", "merlin", "bigfoot"]
 
@@ -31,7 +30,7 @@ const avatarQuery = graphql`
     }
 `
 
-const MultiAvatar = ({index}) => {
+const MultiAvatar = ({ index }) => {
 
   return (
     <StaticQuery query={avatarQuery}
@@ -43,16 +42,16 @@ const MultiAvatar = ({index}) => {
                        style={{
                          marginBottom: 0,
                          minWidth: 50,
-                         borderRadius: '100%'
+                         borderRadius: "100%",
                        }}
                        imgStyle={{
-                         borderRadius: '50%'
+                         borderRadius: "50%",
                        }}
                      />
-                   );
+                   )
                  }}
     />
-  );
+  )
 }
 
-export default MultiAvatar;
+export default MultiAvatar
