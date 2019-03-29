@@ -1,7 +1,8 @@
 import React from "react"
-import "./pageLayout.css"
-import { Link, graphql, StaticQuery } from "gatsby"
+  import { Link, graphql, StaticQuery } from "gatsby"
 import Menu from "../menu"
+
+import '../../styles/styles.scss'
 
 const PageLayout = ({ children, location }) => {
   return (
