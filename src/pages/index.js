@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import SEO from "../components/seo"
-import PageLayout from "../components/layouts/pageLayout"
+import Layout from "../components/layout"
 import Image from "gatsby-image"
 
 class Index extends React.Component {
@@ -15,7 +15,7 @@ class Index extends React.Component {
 
 
     return (
-      <PageLayout location={this.props.location}>
+      <Layout location={this.props.location}>
         <SEO
           title="Latest Posts"
           keywords={[`blog`, `Andrew Goacher`, `programming`, `the goach`, "development"]}
@@ -105,7 +105,7 @@ class Index extends React.Component {
             </div>
           )
         })}
-      </PageLayout>
+      </Layout>
     )
   }
 }

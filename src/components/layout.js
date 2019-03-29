@@ -1,10 +1,10 @@
 import React from "react"
-  import { Link, graphql, StaticQuery } from "gatsby"
-import Menu from "../menu"
+import { Link, graphql, StaticQuery } from "gatsby"
+import Menu from "./menu"
 
-import '../../styles/styles.scss'
+import "../styles/styles.scss"
 
-const PageLayout = ({ children, location }) => {
+const Layout = ({ children, location }) => {
   return (
     <StaticQuery query={layoutQuery} render={data => {
       const social = data.site.siteMetadata.social
@@ -57,7 +57,7 @@ const PageLayout = ({ children, location }) => {
   )
 }
 
-export default PageLayout
+export default Layout
 
 export const layoutQuery = graphql`
     query {

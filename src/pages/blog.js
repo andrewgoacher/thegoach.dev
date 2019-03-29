@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import PageLayout from "../components/layouts/pageLayout"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 class BlogIndex extends React.Component {
@@ -10,7 +10,7 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <PageLayout location={this.props.location}>
+      <Layout location={this.props.location}>
         <SEO title="All Posts" />
         <h1>All Posts</h1>
 
@@ -36,7 +36,7 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
-      </PageLayout>
+      </Layout>
     )
   }
 }
