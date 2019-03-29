@@ -71,9 +71,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const value = `/${d.getFullYear()}/${monthNames[d.getMonth()]}/${t}`
 
     createNodeField({
-      name: `slug`,
       node,
-      value,
+      name: `slug`,
+      value: `/posts/${value}`,
     })
   }
 }
