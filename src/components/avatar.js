@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticQuery} from "gatsby";
 import Image from 'gatsby-image';
-// import { rhythm } from "../utils/typography"
+import { graphql} from "gatsby"
 
 const avatarQuery = graphql`
   query AvatarQuery {
