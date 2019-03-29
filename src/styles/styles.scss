@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'typeography';
+
 .layout {
   grid-template-rows: auto 1fr auto;
   grid-template-columns: repeat(5, 1fr);
@@ -9,7 +12,7 @@
 .upper {
   grid-row: 1;
   grid-column: 1 / span 5;
-  background-color: black;
+  background-color: $banner-color;
   min-width: 100%;
   min-height: 10px;
 }
