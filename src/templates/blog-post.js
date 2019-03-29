@@ -23,11 +23,8 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-          }}
-        />
+        <div dangerouslySetInnerHTML={{ __html: post.html }}/>
+        <hr/>
         <ul
           style={{
             display: `flex`,
@@ -60,20 +57,20 @@ class BlogPostTemplate extends React.Component {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        author
-      }
+    query BlogPostBySlug($slug: String!) {
+        site {
+            siteMetadata {
+                author
+            }
+        }
+        markdownRemark(fields: { slug: { eq: $slug } }) {
+            id
+            excerpt(pruneLength: 160)
+            html
+            frontmatter {
+                title
+                date(formatString: "MMMM DD, YYYY")
+            }
+        }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-      }
-    }
-  }
 `
