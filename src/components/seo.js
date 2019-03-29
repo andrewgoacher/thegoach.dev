@@ -13,16 +13,16 @@ import { useStaticQuery, graphql } from "gatsby"
 function SEO({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(
     graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
+        query {
+            site {
+                siteMetadata {
+                    title
+                    description
+                    author
+                }
+            }
         }
-      }
-    `
+    `,
   )
 
   const metaDescription = description || site.siteMetadata.description
@@ -71,10 +71,10 @@ function SEO({ description, lang, meta, keywords, title }) {
         .concat(
           keywords.length > 0
             ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
-            : []
+              name: `keywords`,
+              content: keywords.join(`, `),
+            }
+            : [],
         )
         .concat(meta)}
     />
