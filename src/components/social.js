@@ -1,6 +1,4 @@
 import React from "react"
-import { StaticQuery } from "gatsby"
-import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
 const socialQuery = graphql`
@@ -21,26 +19,24 @@ const socialQuery = graphql`
     }
 `
 
+const MakeLink = (url, className) => {
+  return (
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      <i className={`fab fa-3x ${className}`}/>
+    </a>
+  );
+}
+
 const Social = () => {
   const data = useStaticQuery(socialQuery)
   const { social, repos } = data.site.siteMetadata
   return (
     <div className="social">
-      <a href={`https://github.com/${repos.github}`} target="_blank">
-        <i className="fa-c fab fa-github fa-3x"></i>
-      </a>
-      <a href={`https://gitlab.com/${repos.gitlab}`} target="_blank">
-        <i className="fab fa-gitlab fa-c fa-3x"></i>
-      </a>
-      <a href={`https://bitbucket.org/${repos.bitbucket}`} target="_blank">
-        <i className="fab fa-bitbucket fa-c fa-3x"></i>
-      </a>
-      <a href={`https://twitter.com/${social.twitter}`} target="_blank">
-        <i className="fab fa-twitter fa-c fa-3x"></i>
-      </a>
-      <a href={`https://linkedin.com/in/${social.linkedin}`} target="_blank">
-        <i className="fab fa-linkedin fa-c fa-3x"></i>
-      </a>
+      {MakeLink(`https://github.com/${repos.github}`, "fa-github")}
+      {MakeLink(`https://gitlab.com/${repos.gitlab}`, "fa-gitlab")}
+      {MakeLink(`https://bitbucket.org/${repos.bitbucket}`, "fa-bitbucket")}
+      {MakeLink(`https://twitter.com/${social.twitter}`, "fa-twitter")}
+      {MakeLink(`https://linkedin.com/in/${social.linkedin}`, "fa-linkedin")}
     </div>
   )
 }
