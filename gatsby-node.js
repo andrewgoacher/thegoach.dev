@@ -68,7 +68,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const { title, date } = node.frontmatter
     const d = new Date(date)
     const t = title.replace(" ", "-")
-    const value = `/${d.getFullYear()}/${monthNames[d.getMonth()]}/${t}`
+    const value = `${d.getFullYear()}/${monthNames[d.getMonth()]}/${t}`.toLowerCase()
 
     createNodeField({
       node,
