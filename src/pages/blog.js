@@ -11,7 +11,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <SEO title="All Posts" />
+        <SEO title="All Posts"/>
         <h1>All Posts</h1>
 
         {posts.map(({ node }) => {
@@ -20,7 +20,7 @@ class BlogIndex extends React.Component {
             <div key={node.fields.slug}>
               <h3
                 style={{
-                  marginBottom: '10px',
+                  marginBottom: "10px",
                 }}
               >
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
@@ -55,7 +55,6 @@ export const pageQuery = graphql`
                     frontmatter {
                         date(formatString: "MMMM DD, YYYY")
                         title
-#                        description
                     }
                 }
             }
