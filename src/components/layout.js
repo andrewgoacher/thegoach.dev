@@ -9,7 +9,7 @@ import "../styles/styles.scss"
 const Layout = ({ children, location }) => {
   return (
     <StaticQuery query={layoutQuery} render={data => {
-      const {tagline, social, repos} = data.site.siteMetadata
+      const {tagline} = data.site.siteMetadata
 
       return (
         <div>
