@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import SEO from "../components/seo"
+import {Seo} from "../components/"
 import Layout from "../layouts/default-layout"
 
 class Index extends React.Component {
@@ -12,7 +12,7 @@ class Index extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <SEO
+        <Seo
           title="Latest Posts"
           keywords={[`blog`, `Andrew Goacher`, `programming`, `the goach`, "development"]}
         />

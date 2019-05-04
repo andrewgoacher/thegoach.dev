@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import './menu.scss'
+
 class Menu extends React.Component {
   createLink(name, path, location) {
     let className = ""
@@ -24,7 +26,8 @@ class Menu extends React.Component {
   render() {
     const { location } = this.props
     return (
-      <ul>
+     <nav>
+        <ul>
         <li>
           {this.createLink("Home", `/`, location)}
         </li>
@@ -32,6 +35,7 @@ class Menu extends React.Component {
           {this.createLink("Blog", `/blog`, location)}
         </li>
       </ul>
+     </nav>
     )
   }
 }

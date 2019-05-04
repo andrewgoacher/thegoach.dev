@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql, StaticQuery } from "gatsby"
 
-import Menu from "../components/menu"
+import {Menu} from "../components/"
 
 const DefaultLayout = ({ children, location }) => {
   return (
@@ -15,9 +15,7 @@ const DefaultLayout = ({ children, location }) => {
               {tagline}
             </Link>
           </header>
-          <nav>
             <Menu location={location}/>
-          </nav>
           <main>
             {children}
           </main>

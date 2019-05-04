@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../layouts/default-layout"
-import SEO from "../components/seo"
+import {Seo} from "../components/"
 
 class BlogIndex extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <SEO title="All Posts"/>
+        <Seo title="All Posts"/>
         <h1>All Posts</h1>
 
         {posts.map(({ node }) => {
