@@ -1,36 +1,41 @@
 import React from "react"
-
 import { Link } from "gatsby"
+
+import './menu.scss'
 
 class Menu extends React.Component {
   createLink(name, path, location) {
-    let className = "";
+    let className = ""
+    let loc = location.pathname
 
-    if(location.pathname === path) {
-      className = "selected";
+    if (loc.length > 1 && loc.lastIndexOf("/") === loc.length - 1) {
+      loc = loc.substring(0, loc.length - 1)
+    }
+
+    if (loc === path) {
+      className = "selected"
     }
 
     return (
       <Link to={path} className={className}>
         {name}
       </Link>
-    );
+    )
   }
 
   render() {
     const { location } = this.props
     return (
-      <ul>
-         <li>
-          {this.createLink("Home", `/`, location)}
-        </li>
+     <nav>
+        <ul>
         <li>
-          {this.createLink("About", `/about`, location)}
+          {this.createLink("Home", `/`, location)}
         </li>
         <li>
           {this.createLink("Blog", `/blog`, location)}
         </li>
       </ul>
+     </nav>
     )
   }
 }
