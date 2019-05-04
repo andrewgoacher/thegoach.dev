@@ -4,8 +4,6 @@ import { Link, graphql, StaticQuery } from "gatsby"
 import Menu from "./menu"
 import Social from "./social"
 
-import "../styles/styles.scss"
-
 const Layout = ({ children, location }) => {
   return (
     <StaticQuery query={layoutQuery} render={data => {
