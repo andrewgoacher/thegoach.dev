@@ -11,11 +11,8 @@ const DefaultLayout = ({ children, location }) => {
       return (
         <div>
           <header>
-            <Link to={`/`}>
-              {tagline}
-            </Link>
-          </header>
             <Menu location={location}/>
+          </header>
           <main>
             {children}
           </main>
