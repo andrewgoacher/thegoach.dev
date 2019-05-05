@@ -6,24 +6,11 @@ header {
     display: flex;
     flex-direction: row;
     width:100%;
-    justify-content: space-between;
-    h3 {
-        margin: 0;
-        color: black;
-        a {
-            text-decoration: none;
-            color: black;
-            &:hover {
-                color: red;
-            }
-        }
-    }
-    nav {
-    }
+    justify-content: flex-end;
 }
 
 main {
-    text-align: center;
+    text-align: justify;
     margin-left: 10%;
     margin-right: 10%;
     min-height: 100%;

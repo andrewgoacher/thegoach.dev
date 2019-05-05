@@ -17,14 +17,6 @@ class Index extends React.Component {
           keywords={[`blog`, `Andrew Goacher`, `programming`, `the goach`, "development"]}
         />
 
-        <h1>Hi I'm Andrew!</h1>
-
-        <div>
-          <p>My site looks ugly because I was procrastinating a lot.</p>
-            <p>I'll get some posts out and then revisit actually making it decent!
-          </p>
-        </div>
-
         <h3>Newest Posts</h3>
 
         {posts.map(({ node }) => {
