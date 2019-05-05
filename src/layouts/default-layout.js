@@ -1,6 +1,10 @@
 import React from "react"
 import { Link, graphql, StaticQuery } from "gatsby"
 
+import './normalize.scss'
+import './typebase.scss'
+import './layout.scss'
+
 import {Menu} from "../components/"
 
 const DefaultLayout = ({ children, location }) => {
