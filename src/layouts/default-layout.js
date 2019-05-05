@@ -15,7 +15,7 @@ const DefaultLayout = ({ children, location }) => {
       return (
         <div>
           <header>
-            <h3>Andrew Goacher</h3>
+            <h3><a href="/">Andrew Goacher</a></h3>
             <Menu location={location}/>
           </header>
           <main>
