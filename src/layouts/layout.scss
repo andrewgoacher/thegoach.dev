@@ -2,6 +2,14 @@ html, body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: red;
+    }
+}
+
 header {
     display: flex;
     flex-direction: row;

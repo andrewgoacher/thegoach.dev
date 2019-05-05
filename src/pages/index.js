@@ -23,6 +23,7 @@ class Index extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
+              <hr />
               <h3
                 style={{
                   marginBottom: "10px",
