@@ -12,12 +12,12 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Seo title="All Posts"/>
-        <h1>All Posts</h1>
 
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
+              <hr />
               <h3
                 style={{
                   marginBottom: "10px",

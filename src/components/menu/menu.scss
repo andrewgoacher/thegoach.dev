@@ -1,10 +1,24 @@
 nav {
+    // float: right;
+    color: black;
+    font-weight: bolder;
     ul {
         display: inline;
         list-style-type: none;
+        margin: 0;
         li {
             display: inline;
             padding: 3px 6px;
+            
+            a {
+                text-decoration: none;
+                color: black;
+                cursor: pointer;
+                &:hover {
+                    color: red;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

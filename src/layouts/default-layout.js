@@ -1,7 +1,11 @@
 import React from "react"
-import { Link, graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 
-import {Menu} from "../components/"
+import './normalize.scss'
+import './typebase.scss'
+import './layout.scss'
+
+import {Menu, Social} from "../components/"
 
 const DefaultLayout = ({ children, location }) => {
   return (
@@ -9,17 +13,21 @@ const DefaultLayout = ({ children, location }) => {
       const {tagline} = data.site.siteMetadata
 
       return (
-        <div>
+        <div className="container">
+          <div className="wrapper">
           <header>
             <Menu location={location}/>
           </header>
           <main>
             {children}
           </main>
+          <div className="psuh" ></div>
+          </div>
           <footer>
-            © Andrew Goacher {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <span>© Andrew Goacher {new Date().getFullYear()}, Built with
+            &nbsp;<a href="https://www.gatsbyjs.org">Gatsby</a>
+            </span>
+            <Social />
           </footer>
         </div>
       )

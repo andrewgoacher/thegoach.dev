@@ -6,7 +6,7 @@ description: "2019 - the year I started conferencing"
 
 I've somehow managed to miss most conferences until this year.  I've never been comfortable asking my company to send me there and most of the time they tend to be quite pricey.  Instead, I've attended quite a lot of meetups.  
 
-This year, a friend had the opportunity to speak at UpFront Conf, and so I decided to attend mostly for moral support.  I was also lucky enough to win a ticket to ReactJS Girls.  I quite enjoyed both experiences and do intend to check out other conferences, although I'm hoping to branch away from 
+This year, a friend had the opportunity to speak at UpFront Conf, and so I decided to attend mostly for moral support.  I was also lucky enough to win a ticket to ReactJS Girls, and my company (AND Digital) were more than happy to pay for my trains down to London.  I quite enjoyed both experiences and do intend to check out other conferences, although I'm hoping to branch away from just attending front end focussed conferences.
 
 Initially, my plan was to do a write up per event.  While I did get a lot from both conferences I don't think I would have enough content to write about.  Instead, I'm hoping to explore some of the technologies discussed and potentiall write about those.
 

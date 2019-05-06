@@ -17,20 +17,13 @@ class Index extends React.Component {
           keywords={[`blog`, `Andrew Goacher`, `programming`, `the goach`, "development"]}
         />
 
-        <h1>Hi I'm Andrew!</h1>
-
-        <div>
-          <p>My site looks ugly because I was procrastinating a lot.</p>
-            <p>I'll get some posts out and then revisit actually making it decent!
-          </p>
-        </div>
-
         <h3>Newest Posts</h3>
 
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
+              <hr />
               <h3
                 style={{
                   marginBottom: "10px",

@@ -1,0 +1,14 @@
+.social {
+    float: right;
+    padding-right: 2em;
+    color: black;
+    font-weight: bolder;
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: red;
+        }
+    }
+}

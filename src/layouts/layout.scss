@@ -1,0 +1,39 @@
+html, body, #___gatsby, #___gatsby > div, .container {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -1.5em;
+}
+
+.push, footer {
+    height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: red;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: flex-end;
+}
+
+main {
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    padding: 0;
+}
