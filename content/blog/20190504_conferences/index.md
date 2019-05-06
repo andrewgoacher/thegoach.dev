@@ -10,7 +10,7 @@ This year, a friend had the opportunity to speak at UpFront Conf, and so I decid
 
 Initially, my plan was to do a write up per event.  While I did get a lot from both conferences I don't think I would have enough content to write about.  Instead, I'm hoping to explore some of the technologies discussed and potentiall write about those.
 
-## Things I did that I shouldn't have
+### Things I did that I shouldn't have
 
 This is mostly for London
 
@@ -21,7 +21,7 @@ I wore jeans.  Again, doesn't sound too silly but they got more and more uncomfo
 I accepted the conference before checking commute times.
 This was probably my biggest mistake, I didn't realise just how long my day would be.  I had to be on a 6am train to get there before 9am - which turned out to be less an issue anyway as the registration period lasted until 10am.  I also got a later train home than needed so I could spend time with friends.  I never regret spending time with friends, but I do regret not counting on train delays existing.  I was out of my house for 20 hours!
 
-## Things I didn't do that I should have
+### Things I didn't do that I should have
 
 I didn't bring deodorant.  I can't have been alone in regretting this one.  ReactJS Girls was hosted in a volcano I think.  It was very, very warm and I think I would have preferred to have been feeling slightly less self-conscious before mingling.
 
@@ -36,7 +36,7 @@ I think for me, hand-written or laptop is better.  My phone is too difficult to 
 Get enough sleep! 
 I went down to London with just 4 hours of sleep.  While I would have slept better for upfront conf, owing to being able to wake at a reasonable time, I should have ensured I was well rested and alert for both conferences.
 
-## General takeaways
+### General takeaways
 
 Some of the talks I assumed I wouldn't like, I loved.  At upfront conf, I found I enjoyed the first talk immensely which was based around ethics.  I enjoyed it more because the speaker was obviously a very gifted speaker.  I found some talks which I assumed I would enjoy the most to be lacking and thus didn't enjoy as much.
 
