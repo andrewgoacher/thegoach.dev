@@ -1,7 +1,7 @@
 ---
 title: Conference Attendance
 date: "2019-05-04T00:00:00.000Z"
-description: "What I've learned so far, that has nothing to actually do with either of the conferences.  Sort of."
+description: "Some of my thoughts on attending conferences, so far."
 ---
 
 I've somehow managed to miss most conferences until this year.  I've never been comfortable asking my company to send me there and most of the time they tend to be quite pricey.  Instead, I've attended quite a lot of meetups.  
