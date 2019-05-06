@@ -13,13 +13,16 @@ const DefaultLayout = ({ children, location }) => {
       const {tagline} = data.site.siteMetadata
 
       return (
-        <div>
+        <div className="container">
+          <div className="wrapper">
           <header>
             <Menu location={location}/>
           </header>
           <main>
             {children}
           </main>
+          <div className="psuh" ></div>
+          </div>
           <footer>
             <span>© Andrew Goacher {new Date().getFullYear()}, Built with
             &nbsp;<a href="https://www.gatsbyjs.org">Gatsby</a>
