@@ -1,0 +1,7 @@
+[development]
+log = 'normal'
+address = 'localhost'
+
+[production]
+log = 'critical'
+address = '0.0.0.0'

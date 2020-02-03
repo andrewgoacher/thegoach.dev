@@ -29,10 +29,11 @@ FROM ubuntu AS release
 EXPOSE 8000
 WORKDIR /app
 
-ENV ROCKET_ENV=production
+ENV ROCKET_ENV=${THEGOACH_STAGE}
 
 COPY --from=npm_build /src/static/ ./static
 COPY --from=rust_build /src/target/release/thegoach_dev .
 COPY templates/ templates/
+COPY Rocket.toml ./
 ENTRYPOINT ["./thegoach_dev"]
 
