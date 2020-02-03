@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  app:
+    image: registry.gitlab.com/andrewgoacher/thegoach.dev/website
+  https-portal:
+    image: steveltn/https-portal:1
+    ports:
+      - '80:80'
+      - '443:443'
+    links:
+      - app
+    restart: always
+    environment:
+      DOMAINS: 'andrewgoacher.com -> http://app:8000'
+      STAGE: 'production'
