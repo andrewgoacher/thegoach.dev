@@ -17,7 +17,7 @@ use rocket_contrib::templates::Template;
 fn rocket() -> Rocket {
     rocket::ignite()
         .attach(Template::fairing())
-        .mount("/", StaticFiles::from("static"))
+        .mount("/", StaticFiles::from("public"))
         .mount("/", routes![routes::index]) //, routes::blog, routes::about])
 }
 

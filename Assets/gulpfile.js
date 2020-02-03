@@ -6,7 +6,7 @@ const sassTask = (cb) => {
         .pipe(sass({
             includePaths:["node_modules/bootstrap/scss/"],
             outputStyle: 'compressed'}))
-        .pipe(gulp.dest('../static/assets/css'));
+        .pipe(gulp.dest('../public/assets/css'));
     cb();
 };
 

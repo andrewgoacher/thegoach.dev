@@ -21,7 +21,7 @@ RUN cargo build --release
 FROM build_base AS npm_build
 WORKDIR /src
 COPY Assets/ Assets/
-COPY static/ static/
+COPY public public/
 WORKDIR /src/Assets
 RUN npm install -ci && gulp
 
@@ -29,7 +29,7 @@ FROM ubuntu AS release
 EXPOSE 8000
 WORKDIR /app
 
-COPY --from=npm_build /src/static/ ./static
+COPY --from=npm_build /src/public/ ./public
 COPY --from=rust_build /src/target/release/thegoach_dev .
 COPY templates/ templates/
 COPY Rocket.toml ./
