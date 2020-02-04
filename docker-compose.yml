@@ -2,7 +2,7 @@ version: '2'
 
 services:
   app:
-    image: registry.gitlab.com/andrewgoacher/andrewgoacher.com/website
+    image: registry.gitlab.com/andrewgoacher/thegoach.dev/website
   https-portal:
     image: steveltn/https-portal:1
     ports:
@@ -12,6 +12,6 @@ services:
       - app
     restart: always
     environment:
-      DOMAINS: 'andrewgoacher.com -> http://app:8000, www.andrewgoacher.com => andrewgoacher.com'
+      DOMAINS: 'thegoach.dev -> http://app:8000, www.thegoach.dev => thegoach.dev'
       STAGE: ${THEGOACH_STAGE}
       ROCKET_ENV: ${THEGOACH_STAGE}
