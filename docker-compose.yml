@@ -12,6 +12,6 @@ services:
       - app
     restart: always
     environment:
-      DOMAINS: 'andrewgoacher.com -> http://app:8000, thegoach.dev -> http://app:8000, www.andrewgoacher.com => andrewgoacher.com, www.thegoach.dev => thegoach.dev'
+      DOMAINS: 'thegoach.dev -> http://app:8000, www.thegoach.dev => thegoach.dev'
       STAGE: ${THEGOACH_STAGE}
       ROCKET_ENV: ${THEGOACH_STAGE}
