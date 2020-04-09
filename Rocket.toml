@@ -1,5 +1,5 @@
 [development]
-log = 'normal'
+log = 'debug'
 address = 'localhost'
 
 [staging]

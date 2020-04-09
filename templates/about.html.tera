@@ -1,5 +1,22 @@
 {% extends "base" %}
 
 {% block content %}
-<p>Coming soon...</p>
+
+<div class="row">
+    <div class="col-sm-6 col-md-3">
+        {% for item in items %}
+        <div>
+            {{item.name}}<br />
+            ({{item.title}} - {{item.time}})<br />
+            <p>{{item.description}}</p>
+            <ul>
+            {% for technology in item.technologies %}
+            <li>{{technology}}</li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
 {% endblock content %}

@@ -1,24 +1,32 @@
 #![feature(proc_macro_hygiene, decl_macro)]
 
-#[macro_use] extern crate rocket;
-extern crate rocket_contrib;
-#[macro_use] extern crate serde_derive;
-extern crate serde_json;
-#[macro_use] extern crate time;
+use std::vec::Vec;
 
-mod routes;
-mod blogpost;
-
-use rocket::Rocket;
-use rocket_contrib::serve::StaticFiles;
+use rocket::{routes, Rocket};
 use rocket_contrib::templates::Template;
+use rocket_contrib::serve::StaticFiles;
+
+mod blog;
+mod cache;
+mod types;
+mod formatters;
+mod web;
+mod markdown;
+
+use crate::blog::AllBlogPostListings;
+
+use crate::web::{PostCache, PageCache};
 
 
 fn rocket() -> Rocket {
     rocket::ignite()
         .attach(Template::fairing())
+        .manage(AllBlogPostListings::new())
+        .manage(PostCache::new())
+        .manage(PageCache::new())
         .mount("/", StaticFiles::from("public"))
-        .mount("/", routes![routes::index]) //, routes::blog, routes::about])
+        .mount("/", routes![web::index, web::post, web::about, web::blog, web::get_page])
+        .register(web::error::catchers())
 }
 
 fn main() {

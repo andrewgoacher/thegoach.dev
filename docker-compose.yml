@@ -3,8 +3,12 @@ version: '2'
 services:
   app:
     image: registry.gitlab.com/andrewgoacher/thegoach.dev/website
+    environment:
+      ROCKET_ENV: ${THEGOACH_STAGE}
   https-portal:
     image: steveltn/https-portal:1
+    volumes:
+      - /data/ssl_certs:/var/lib/https-portal
     ports:
       - '80:80'
       - '443:443'
@@ -14,4 +18,3 @@ services:
     environment:
       DOMAINS: 'thegoach.dev -> http://app:8000, www.thegoach.dev => thegoach.dev'
       STAGE: ${THEGOACH_STAGE}
-      ROCKET_ENV: ${THEGOACH_STAGE}
