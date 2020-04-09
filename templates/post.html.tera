@@ -1,0 +1,7 @@
+{% extends "base" %}
+
+{% block content %}
+
+{{post.contents|safe}}
+
+{% endblock content %}

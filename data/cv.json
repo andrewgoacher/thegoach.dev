@@ -1,0 +1,75 @@
+{
+  "items": [
+    {
+      "name": "UInsure",
+      "title": "Principal Developer",
+      "time": "Current",
+      "description": "My current role is as a principal developer in a small highly skilled team.  I'll be working closely with the lead developer exploring better ways of working, more maintainable patterns and practices while helping bring these changes into the team.",
+      "technologies": []
+
+    },
+    {
+      "name": "Digigoach Ltd",
+      "title": "Director / Consultant",
+      "time": "2019-2020",
+      "description": "Mojo Mortgages (2019-2020)\nSpent time working at Mojo as a consultant working through a list of small projects including refactoring and 3rd party integrations",
+      "technologies": [".NET", ".Net Core", "nodejs", "graphql", "aws", "React"]
+    },
+    {
+      "name": "AND Digital",
+      "title": "Product Developer L5",
+      "time": "2019",
+      "description": "Hired as a senior software engineer to work on client projects as a consultant.  Working within teams in whichever capacity is required.\nFocussed on.net and angular for previous clients, pushed for (and prototyped) several approaches to automated testing in legacy systems.\nHelped architect a secure, scale-able and low maintenance solution for a client on a relatively tight deadline.\nParticipated in a small product development sprint creating an Alexa Voice skill and participated in a couple of Google Design sprints.",
+      "technologies": [".NET", ".Net Core", "Visual Studio 2019", "VSCore", "Jetbrains Rider", "Jetbrains Webstorm", "Git", "SOAP", "React", "Angular", "Alexa SDK", "aws", "Azure", "Service Fabric", "Docker"]
+    },
+    {
+      "name": "Shield Safety Group/ Dynamic Risk Indicator",
+      "title": "Senior Software Developer",
+      "time": "2017-2019",
+      "description": "Initially hired as a senior software developer to lead a team I finished my time in a \"dev ops\" squad as a technical specialist.\nMy original role was to lead a team of 2 juniors in 2-weekly sprints working on modules of Compliance Centre. I spent time looking after the sprint as a whole while mentoring and helping my team.  While working here I helped challenge processes and practices to enable better development and helped for a team culture of maintainable and testable code first.\nI also tried to foster a \"no stupid questions\" for my team to enable everyone to participate in discussions and technical suggestions.\nI spent a lot of time working with the development manager exploring different approached to TDD and beginning a journey of DDD.\nAs a member of the dev ops team, I spent time hunting down significant technical and performance issues within the systems.",
+      "technologies": ["Visual Studio 2017", "Visual Studio 2019", "Git", "Jira", "YouTrack", ".NET", ".Net Core", "AngularJS", "Entity Framework", "CSS", "SQL", "Team City", "Azure"]
+    },
+    {
+      "name": "Carfinance 247",
+      "title": "Web Developer",
+      "time": "2016-2017",
+      "description": "I worked with a large team of developers on internal tools for the companies sales teams.  My work day was split between active feature development on the areas of software my sub-team held responsibility for and bug fixing and change requests on the legacy software we were working to replace.  Our team implemented a legacy rota to distribute time spent on bug fixing fairly.\nI spent time championing unit testing and good software practices while helping junior team members with problems.",
+      "technologies": ["Visual Studio 2015", "Git", "C#", "AngularJS", "Html", "CSS/Less", "Bamboo CI", "SQL"]
+    },
+    {
+      "name": "Sage UK",
+      "title": "Web Developer",
+      "time": "2015-2016",
+      "description": "I worked with a team of tax and UI specialists to help build CT Online.  An online tool for small businesses to record and process their corporation tax.  We worked primarily in angularjs and ruby-on-rails.\nThe team worked in an agile manner participating in sprint planning, scrums, retrospectives and daily stand-ups.  We had some interactions with other teams as certain parts of the software interacted with other components.",
+      "technologies": ["Jetbrains RubyMine", "Ruby", "Ruby on Rails", "Git", "Jira", "HTML", "CSS/LESS", "AngularJS", "Selenium", "Gherkin"]
+    },
+    {
+      "name": "Web Applications UK",
+      "title": "Software Engineer",
+      "time": "2014-2015",
+      "description": "My time at WebApps was mostly spend pair programming while developing a natural language querying system for their in-development software.\n I spent the rest of my time working to support their legacy software",
+      "technologies": ["Visual Studio 2013", "Git", "C#", ".NET", "ASP.Net", "SQL", "ASP"]
+    },
+    {
+      "name": "System C Healthcare",
+      "title": "Software Developer",
+      "time": "2014",
+      "description": "I was part of a small team that managed 4 out of many modules in their application suites.\nSystem C operated in an agile environment with very large N-tier enterprise software.  While slightly different to previous agile methodologies, this was my first foray into a more formal agile methodology.",
+      "technologies": ["Visual Studio 2012", "C#", ".NET", "WinForms", "DevXPress"]
+    },
+    {
+      "name": "DriveWorks Ltd",
+      "title": "Software Developer",
+      "time": "2011-2014",
+      "description": "As the 3D developer at DriveWorks my main responsibilities were to help create and maintain their 3D applications targeted at Desktop, Mobile and Web.  This required a large degree of confidence and autonomy.  I had a fair amount of help from the lead developer but this was a mostly solitary project.\nI was also responsible for my share of bug fixes within the main application suite.  I participated in an \"on call\" rota, which was a chance for each developer to spend time supporting technical staff in diagnosing customer issues.\nMy greatest achievment was getting the mobile apps onto their respective stores.  This was a multi-person achievement but being a driving force did feel pretty amazing.",
+      "technologies": ["Microsoft Visual Studio (2010, 2012, 2013)", "TFS", "Git", "C#", "VB.Net", "Script Sharp", "Open TK", "SharpDX", "Mono", "MonoDevelop", "Xamarin Studio", "Win Forms", "WPF", "Silverlight", "XNA"]
+    },
+    {
+      "name": "University of Huddersfield",
+      "title": "Computer Games Programming Graduate BSc (Hons)",
+      "time": "2007-2011",
+      "description": "I applied to study computer games programming because I struggled to learn to code on my own, this seemed like a fun and practical course on programming.\nI benefited more than I would have from a Comp Sci degree I think as the course was predominantly practical and we studied a myriad of languages including Java, C# and C++.",
+      "technologies": ["C++", "C#", "Java", "XNA", "Prolog"]
+    }
+  ]
+}
