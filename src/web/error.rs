@@ -1,6 +1,4 @@
 use rocket::response::content;
-use rocket_contrib::templates::Template;
-use std::error::Error;
 use serde::Serialize;
 use rocket::{catch, catchers};
 use rocket::Catcher;

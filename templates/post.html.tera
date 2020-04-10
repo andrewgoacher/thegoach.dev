@@ -2,6 +2,8 @@
 
 {% block content %}
 
-{{post.contents|safe}}
+<div class="row">
+    {{post.contents|safe}}
+</div>
 
 {% endblock content %}

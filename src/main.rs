@@ -8,7 +8,6 @@ use rocket_contrib::serve::StaticFiles;
 
 mod blog;
 mod cache;
-mod types;
 mod formatters;
 mod web;
 mod markdown;
@@ -25,7 +24,8 @@ fn rocket() -> Rocket {
         .manage(PostCache::new())
         .manage(PageCache::new())
         .mount("/", StaticFiles::from("public"))
-        .mount("/", routes![web::index, web::post, web::about, web::blog, web::get_page])
+        .mount("/", routes![web::index::index, web::blog::post, web::about::about,
+            web::blog::blog, web::get_page, web::cv::cv])
         .register(web::error::catchers())
 }
 
