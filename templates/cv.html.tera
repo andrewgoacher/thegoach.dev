@@ -1,0 +1,32 @@
+{% extends "base" %}
+
+{% block head %}
+<link rel="stylesheet" href="/cv.css">
+{% endblock head %}
+
+{% block content %}
+
+<div class="row">
+    <div class="timeline">
+        <ul>
+            {% for item in items %}
+            <li>
+                <div class="date">
+                    <h4>{{item.title}}</h4>
+                    <h5>{{item.time}}</h5>
+                </div>
+                <div class="point"></div>
+                <div class="content">
+                    <h3>{{item.name}}</h3>
+                    <p>{{item.description}}</p>
+                    {% for technology in item.technologies %}
+                    <span class="tag">{{technology}}</span>
+                    {% endfor %}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% endblock content %}

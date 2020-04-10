@@ -2,8 +2,7 @@ extern crate comrak;
 
 use comrak::{markdown_to_html, ComrakOptions};
 use std::path::Path;
-use std::error::Error;
-use std::io::{prelude::*, BufReader};
+use std::io::prelude::*;
 use std::io::Result;
 use std::fs::File;
 
