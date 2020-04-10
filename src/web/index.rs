@@ -12,10 +12,15 @@ fn get_limit(size: usize) -> usize {
     if size > 8 { 8 } else { size }
 }
 
-fn create_index_template(posts: Vec<BlogListing>) -> Template {
-    let limit= get_limit(posts.len());
+fn get_posts(posts: &Vec<BlogListing>, len: usize) -> Vec<BlogListing> {
+    let limit= get_limit(len);
     let slice: &[BlogListing] = &posts[0..limit];
-    let posts = slice.to_vec();
+    slice.to_vec()
+}
+
+fn create_index_template(posts: Vec<BlogListing>) -> Template {
+    let post_count = posts.len();
+    let posts = if post_count == 0 { Vec::new() } else { get_posts(&posts, post_count )};
     let context = IndexContext { posts };
     Template::render("index", &context)
 }

@@ -2,6 +2,8 @@
 
 {% block content %}
 
-{{page|safe}}
+<div class="row">
+    {{page|safe}}
+</div>
 
 {% endblock content %}

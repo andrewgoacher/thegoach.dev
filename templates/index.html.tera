@@ -10,6 +10,8 @@
     </div>
 </div>
 <div class="row section featured topspace">
+{% set len = posts | length %}
+{% if len > 0 %}
     <h2 class="section-title"><span>Recent Posts</span></h2>
     <div class="row">
         {% for post in posts %}
@@ -21,6 +23,12 @@
         </div>
         {% endfor %}
     </div>
+{% else %}
+  <div class="row">
+      <p>I'm still working on my first blog post!</p>
+      <p>Check back soon and hopefully you'll enjoy my ramblings.</p>
+  </div>
+{% endif %}
 </div>
 
 {% endblock content %}
