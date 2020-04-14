@@ -1,9 +1,16 @@
-Spicy jalapeno bacon ipsum dolor amet tempor minim fatback beef ribs non salami incididunt fugiat pork chop ut eiusmod cupim sed meatball pig. Qui minim tongue, ipsum eiusmod spare ribs tenderloin ad eu kielbasa quis pork chop. Est prosciutto in ea. Capicola officia meatloaf minim turducken esse in pig. Et tongue ribeye occaecat, commodo pork loin do bresaola picanha aute bacon nulla landjaeger. Pork chislic turducken pork chop esse andouille. Cupidatat in tri-tip tenderloin velit filet mignon excepteur bacon qui adipisicing elit.
+Hi I'm Andrew
 
-Proident picanha porchetta in. Irure kevin non, hamburger enim duis cow beef ribs velit. Short loin kielbasa dolor ribeye, pastrami sint prosciutto nulla adipisicing cupim jerky pork chop boudin esse. Shank qui kevin ham hock, nulla burgdoggen magna adipisicing andouille dolore nisi sed laboris meatloaf. Bacon aute et flank biltong ex consequat.
+I live at home with 2 small Senegal parrots.  They come first in this because they're more important than programming.  They're called Merlin and Charlie and are disproportionately loud given their size.  My friends hear them through discord all the time and confirm they are indeed pains in my arse.  They like to chime in on meetings so I live on mute.
 
-Tail pancetta flank frankfurter brisket commodo. Capicola lorem cow, drumstick burgdoggen shank meatloaf pancetta ea turducken flank jowl eu ut ham. Nisi irure culpa, ex jowl swine t-bone burgdoggen in do pork beef tenderloin fugiat dolor. Ad deserunt aute ham hock pork, bacon spare ribs fatback eiusmod. Eiusmod turducken t-bone, pig ullamco venison sausage. Id spare ribs leberkas, nisi drumstick tongue sed kevin dolore fugiat kielbasa turducken.
+If you just want to know about me professionally, my LinkedIn profile is [here](https://www.linkedin.com/in/andrewgoacher/) or just take a look at [my job history](/cv).
 
-Et officia in capicola, ullamco enim dolore turkey pork loin ham hock tempor chuck. Dolore labore occaecat jerky ground round sirloin deserunt chuck beef chislic. Frankfurter consectetur incididunt, pig minim velit consequat andouille ball tip fatback aliquip in filet mignon. Sirloin spare ribs voluptate, chuck laborum do tempor tri-tip esse culpa pork belly. Pariatur short loin pork loin consequat, exercitation meatloaf shoulder sirloin tempor dolor spare ribs chicken minim. Laborum sint veniam anim, drumstick sirloin alcatra bacon proident cupidatat aliqua ullamco quis jerky andouille.
+I've been programming for a while now, at least 10 whole years.  I still feel way out of my depth, all the time.  I first attempted to learn around 2003 when being 13 felt a good age to become a hacker.  It turns out, that navigating the wars between C and C++, and the entire C communities racism to languages like Java and C# was a little too much for me back then.  I decided to wait until I went to university, where I chose to study Computer Games Programming.
 
-Chuck andouille velit veniam cupidatat sed prosciutto, drumstick culpa pork. Pork chop adipisicing non eu chicken. Turkey aliqua sed, pork chop frankfurter sausage velit hamburger elit sunt tenderloin pork loin culpa. Ribeye ullamco brisket, swine boudin pig drumstick proident ut meatloaf tenderloin. Pork chop sirloin picanha aliqua boudin lorem strip steak chicken et shank labore spare ribs fugiat occaecat cupim. In do sirloin, venison proident magna enim adipisicing.
+The rest is kind of history (ish).
+
+These days I spend a lot of time trying to figure out what kind of developer I actually am.  I'm a big fan of TDD and pragmatic approaches but I'm trying to find a balance between delivery and longevity.
+
+At work, I tend to use .NET languages (well, if we're being specific, I use C#) and javascript technologies most of the time and you wouldn't be too far off if you called me a web developer.
+
+At home, I play around with a lot of different technologies.  This website is written in HTML (using Tera templating) and Rust.  I like F#, C# (with MonoGame most of the time) and anything else that tickles my fancy.
+
