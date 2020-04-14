@@ -1,0 +1,19 @@
+{% extends "base" %}
+
+{% block content %}
+
+<div class="row section topspace">
+    <h2 class="section-title"><span>404</span></h2>
+    <div class="row">
+        <h1>Page not found</h1>
+        <h3></h3>
+        <p>
+            Sorry but the page you are looking for does not exist, or has been moved.
+        </p>
+        <p>
+            If you came here by a link within the website please contact me on <a href="mailto:andrewgoacher@outlook.com">andrewgoacher@outlook.com</a> so I can fix that!
+        </p>
+    </div>
+</div>
+
+{% endblock content %}

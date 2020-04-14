@@ -8,9 +8,9 @@
 
 <div class="row">
     <div class="timeline">
-        <ul>
+        <ul class="tl">
             {% for item in items %}
-            <li>
+            <li class="tl">
                 <div class="date">
                     <h4>{{item.title}}</h4>
                     <h5>{{item.time}}</h5>
@@ -19,9 +19,11 @@
                 <div class="content">
                     <h3>{{item.name}}</h3>
                     <p>{{item.description}}</p>
+                    <ul class="tag-list">
                     {% for technology in item.technologies %}
-                    <span class="tag">{{technology}}</span>
+                    <li class="tag">{{technology}}</li>
                     {% endfor %}
+                    </ul>
                 </div>
             </li>
             {% endfor %}
