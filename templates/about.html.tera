@@ -1,8 +1,11 @@
 {% extends "base" %}
 {% block content %}
 
-<div class="row section">
-    {{page|safe}}
+<div class="row section featured topspace">
+    <h2 class="section-title"><span>Whoami</span></h2>
+    <div class="row">
+        {{page|safe}}
+    </div>
 </div>
 
 {% endblock content %}
