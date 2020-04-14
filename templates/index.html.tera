@@ -5,13 +5,13 @@
 <div class="row section topspace">
     <div class="col-md-12">
         <p class="lead text-center text-muted">
-            One day, there will be about 6 blog posts on here and I'll consider myself a successful <a href="/blog">blogger</a>.<br />
+            One day, there will be about 6 blog posts on here and I'll consider myself a successful <a href="/blog">blogger</a>.<br/>
             I'm a programmer, you can find out more about me <a href="/about">here</a>.
     </div>
 </div>
 <div class="row section featured topspace">
-{% set len = posts | length %}
-{% if len > 0 %}
+    {% set len = posts | length %}
+    {% if len > 0 %}
     <h2 class="section-title"><span>Recent Posts</span></h2>
     <div class="row">
         {% for post in posts %}
@@ -23,12 +23,14 @@
         </div>
         {% endfor %}
     </div>
-{% else %}
-  <div class="row">
-      <p>I'm still working on my first blog post!</p>
-      <p>Check back soon and hopefully you'll enjoy my ramblings.</p>
-  </div>
-{% endif %}
+    {% else %}
+    <h2 class="section-title"><span>Sorry! No posts yet!</span></h2>
+    <div class="row">
+        <h3></h3>
+        <p>I'm still working on my first blog post!</p>
+        <p>Check back soon and hopefully you'll enjoy my ramblings.</p>
+    </div>
+    {% endif %}
 </div>
 
 {% endblock content %}

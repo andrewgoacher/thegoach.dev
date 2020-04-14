@@ -14,7 +14,7 @@ pub type PostCache = CacheMap<PostContext>;
 
 #[get("/blog")]
 pub fn blog(cache: State<PageCache>) -> Option<Template> {
-    super::get_page_inner("blog", cache)
+    super::get_page_inner("blog", cache, "blog")
 }
 
 fn create_blog_post_page(post_context: PostContext) -> Template {

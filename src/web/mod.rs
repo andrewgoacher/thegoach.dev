@@ -20,12 +20,12 @@ pub type PageCache = CacheMap<PageContext>;
 
 #[get("/pages/<page>")]
 pub fn get_page(page: String, cache: State<PageCache>) -> Option<Template> {
-    get_page_inner(&page, cache)
+    get_page_inner(&page, cache, "page")
 }
 
 
-fn create_page_template(page_context: PageContext) -> Template {
-    Template::render("page", &page_context)
+fn create_page_template(page_context: PageContext, template_file: &'static str) -> Template {
+    Template::render(template_file, &page_context)
 }
 
 fn render_markdown_for_page(page: String, cache: &State<PageCache>) -> Option<PageContext> {
@@ -38,11 +38,11 @@ fn render_markdown_for_page(page: String, cache: &State<PageCache>) -> Option<Pa
         })
 }
 
-fn get_page_inner(page: &str, cache: State<PageCache>) -> Option<Template> {
+fn get_page_inner(page: &str, cache: State<PageCache>, template_file: &'static str) -> Option<Template> {
     let page = String::from(page);
 
     cache.get_item(&page)
         .or(render_markdown_for_page(page, &cache))
-        .map(|context| create_page_template(context))
+        .map(|context| create_page_template(context, template_file))
 }
 
