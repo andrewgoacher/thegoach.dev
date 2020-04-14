@@ -1,12 +1,7 @@
 FROM ubuntu AS build_base
 RUN apt update \
-    && apt install -y git \
-    && apt -y install curl \
-    && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y \
-    && curl -sL https://deb.nodesource.com/setup_12.x | bash - \
-    && apt-get install -yq nodejs build-essential \
-    && npm install -g npm \
-    && npm install -g gulp-cli
+    && apt -y install curl build-essential git\
+    && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 ENV PATH=${PATH}:/root/.cargo/bin
 RUN rustup override set nightly-2020-01-25
@@ -18,19 +13,13 @@ COPY Cargo.toml .
 WORKDIR /src/src
 RUN cargo build --release
 
-FROM build_base AS npm_build
-WORKDIR /src
-COPY Assets/ Assets/
-COPY public public/
-WORKDIR /src/Assets
-RUN npm install -ci && gulp
-
-FROM ubuntu AS release
+FROM rust_build AS release
 EXPOSE 8000
 WORKDIR /app
 
-COPY --from=npm_build /src/public/ ./public
 COPY --from=rust_build /src/target/release/thegoach_dev .
+COPY data/ data/
+COPY public/ public/
 COPY templates/ templates/
 COPY Rocket.toml ./
 ENTRYPOINT ["./thegoach_dev"]
