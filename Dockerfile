@@ -23,4 +23,3 @@ COPY public/ public/
 COPY templates/ templates/
 COPY Rocket.toml ./
 ENTRYPOINT ["./thegoach_dev"]
-
