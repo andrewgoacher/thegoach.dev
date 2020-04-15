@@ -1,8 +1,4 @@
-FROM ubuntu AS build_base
-RUN apt update \
-    && apt -y install curl build-essential git\
-    && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-
+FROM rust AS build_base
 ENV PATH=${PATH}:/root/.cargo/bin
 RUN rustup override set nightly-2020-01-25
 
