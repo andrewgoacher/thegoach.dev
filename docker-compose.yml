@@ -16,4 +16,5 @@ services:
       - app
     restart: always
     environment:
+      STAGE: 'production'
       DOMAINS: 'thegoach.dev -> http://app:8000'
