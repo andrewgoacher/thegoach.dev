@@ -12,6 +12,7 @@ stages:
 variables:
   DOCKER_HOST: tcp://docker:2375
   DOCKER_DRIVER: overlay2
+  CARGO_HOME: $CI_PROJECT_DIR/cargo
 
 before_script:
   - export IMAGE=$CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME
@@ -26,6 +27,10 @@ build:
   only:
     refs:
       - master
+  cache:
+    paths:
+      - target/
+      - cargo/
   script:
     - docker build -t $IMAGE:web .
     - docker push $IMAGE:web
