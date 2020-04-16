@@ -17,4 +17,4 @@ services:
     restart: always
     environment:
       STAGE: 'production'
-      DOMAINS: 'thegoach.dev -> http://app:8000'
+      DOMAINS: 'thegoach.dev -> http://app:8000, www.thegoach.dev => thegoach.dev'
