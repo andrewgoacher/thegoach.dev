@@ -32,6 +32,7 @@ build:
       - target/
       - cargo/
   script:
+    - echo "building $IMAGE:web"
     - docker build -t $IMAGE:web .
     - docker push $IMAGE:web
 
