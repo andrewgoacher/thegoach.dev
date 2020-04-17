@@ -1,9 +1,9 @@
 {% extends "base" %}
 {% block content %}
 
-<div class="row section featured topspace">
-    <h2 class="section-title"><span>Whoami</span></h2>
-    <div class="row">
+<div class="row topspace">
+    <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 maincontent">
+        <h2 class="section-title"><span>Whoami</span></h2>
         {{page|safe}}
     </div>
 </div>
