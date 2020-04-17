@@ -9,9 +9,9 @@
             I'm a programmer, you can find out more about me <a href="/about">here</a>.
     </div>
 </div>
+{% set len = posts | length %}
+{% if len > 0 %}
 <div class="row section featured topspace">
-    {% set len = posts | length %}
-    {% if len > 0 %}
     <h2 class="section-title"><span>Recent Posts</span></h2>
     <div class="row">
         {% for post in posts %}
@@ -23,14 +23,16 @@
         </div>
         {% endfor %}
     </div>
-    {% else %}
-    <h2 class="section-title"><span>Sorry! No posts yet!</span></h2>
-    <div class="row">
-        <h3></h3>
+</div>
+{% else %}
+<div class="row section featured topspace">
+    <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 maincontent">
+        <h2 class="section-title"><span>Sorry! No posts yet!</span></h2>
         <p>I'm still working on my first blog post!</p>
         <p>Check back soon and hopefully you'll enjoy my ramblings.</p>
     </div>
-    {% endif %}
 </div>
+</div>
+{% endif %}
 
 {% endblock content %}

@@ -2,9 +2,9 @@
 
 {% block content %}
 
-<div class="row section featured topspace">
+<div class="row topspace">
+    <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 maincontent">
     <h2 class="section-title"><span>Sorry! No posts yet!</span></h2>
-    <div class="row">
         <h3></h3>
         {{page|safe}}
     </div>
