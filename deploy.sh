@@ -6,5 +6,9 @@ ssh -o StrictHostKeyChecking=no $SSH_USER@$DIGITAL_OCEAN_IP_ADDRESS << 'ENDSSH'
   docker login -u $CI_REGISTRY_USER -p $CI_JOB_TOKEN $CI_REGISTRY
   docker pull $IMAGE
   docker-compose down
-  docker-compose up -d
+  cd ..
+  rm -rf /app
+  mv /app_new /app
+  mkdir /app_new
+  docker_compose up -d
 ENDSSH

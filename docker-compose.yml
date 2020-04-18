@@ -1,10 +1,6 @@
 version: '2'
 
 services:
-  app:
-    image: registry.gitlab.com/andrewgoacher/thegoach.dev:web
-    environment:
-      ROCKET_ENV: ${ROCKET_ENV}
   https-portal:
     image: steveltn/https-portal:1
     volumes:
@@ -17,4 +13,4 @@ services:
     restart: always
     environment:
       STAGE: 'production'
-      DOMAINS: 'thegoach.dev -> http://app:8000, www.thegoach.dev => thegoach.dev'
+      DOMAINS: 'thegoach.dev -> http://dockerhost:8000, www.thegoach.dev => thegoach.dev'
