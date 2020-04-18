@@ -14,8 +14,7 @@ variables:
   DOCKER_DRIVER: overlay2
 
 before_script:
-  - export IMAGE=$CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME
-  - export WEB_IMAGE=$IMAGE:web
+  - export IMAGE=$CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:web
   - apk add --no-cache openssh-client bash
   - chmod +x ./setup_env.sh
   - bash ./setup_env.sh
@@ -27,9 +26,9 @@ build:
     refs:
       - master
   script:
-    - echo "building $IMAGE:web"
-    - docker build -t $IMAGE:web .
-    - docker push $IMAGE:web
+    - echo "building $IMAGE"
+    - docker build -t $IMAGE .
+    - docker push $IMAGE
 
 deploy:
   stage: deploy
