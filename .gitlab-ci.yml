@@ -28,7 +28,7 @@ build:
       - cargo/
   artifacts:
     paths:
-      - target/
+      - target/release/thegoach_dev
 
 deploy:
   stage: deploy
