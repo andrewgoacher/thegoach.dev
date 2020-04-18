@@ -11,5 +11,5 @@ ssh -o StrictHostKeyChecking=no $SSH_USER@$DIGITAL_OCEAN_IP_ADDRESS << 'ENDSSH'
   mkdir /app_new
   cd /app
   ./thegoach_dev &
-  docker_compose up -d
+  docker-compose up -d
 ENDSSH
