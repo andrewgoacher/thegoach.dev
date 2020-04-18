@@ -41,5 +41,7 @@ deploy:
     - ssh-add ~/.ssh/id_rsa
     - ssh-keyscan -H 'gitlab.com' >> ~/.ssh/known_hosts
     - chmod +x ./deploy.sh
+    - echo "Hello"
+    - ls
     - scp  -o StrictHostKeyChecking=no -r ./.env ./docker-compose.yml ./data/ ./public/ ./templates/ ./Rocket.toml ./target/release/thegoach_dev $SSH_USER@$DIGITAL_OCEAN_IP_ADDRESS:/app_new
     - bash ./deploy.sh
