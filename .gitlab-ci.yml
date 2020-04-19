@@ -10,7 +10,6 @@ variables:
   CARGO_HOME: $CI_PROJECT_DIR/cargo
 
 before_script:
-  - apt install openssh-client bash
   - chmod +x ./setup_env.sh
   - bash ./setup_env.sh
 

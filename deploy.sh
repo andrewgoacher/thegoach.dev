@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ssh -o StrictHostKeyChecking=no $SSH_USER@$DIGITAL_OCEAN_IP_ADDRESS << 'ENDSSH'
   cd /app
@@ -10,5 +10,5 @@ ssh -o StrictHostKeyChecking=no $SSH_USER@$DIGITAL_OCEAN_IP_ADDRESS << 'ENDSSH'
   mkdir /app_new
   cd /app
   docker-compose up -d
-  ./thegoach_dev & disown
+  nohup ./thegoach_dev > waste.out 2> waste.err < /dev/null &
 ENDSSH
