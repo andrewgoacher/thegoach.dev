@@ -1,2 +1,8 @@
 [
+  {
+    "title": "Hello World",
+    "file": "hello_world",
+    "description": "A look at the new site, why I built it and with what.",
+    "posted": "01/06/2020"
+  }
 ]
