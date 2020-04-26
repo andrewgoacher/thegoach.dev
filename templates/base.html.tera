@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author"      content="Andrew Goacher (thegoach.com)">
+    <meta name="author" content="Andrew Goacher (thegoach.com)">
     <title>TheGoach.com - Never updates on Mondays!</title>
     <link rel="shortcut icon" href="/images/gt_favicon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:ital,wght@0,300;0,400;1,700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/231e949c39.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/231e949c39.css"/>
     {% block head %}{% endblock %}
 </head>
 <body class="home">
@@ -24,12 +26,18 @@
 				needs a website as his friends don't listen any more.</span>
             </h1>
         </div>
-        <nav class="navbar navbar-default navbar-sticky">
+        <nav class="navbar navbar-default ">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#target"
+                            aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-                <div class="navbar-collapse collapse">
+                <div class="collapse navbar-collapse" id="target">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="/">Home</a></li>
                         <li><a href="/about">About</a></li>
@@ -66,7 +74,8 @@
                             <a href="https://www.linkedin.com/in/andrewgoacher/"><i class="fa fa-linkedin fa-2"></i></a>
                             <a href="https://github.com/andrewgoacher/"><i class="fa fa-github fa-2"></i></a>
                             <a href="https://gitlab.com/andrewgoacher"><i class="fa fa-gitlab fa-2"></i></a>
-                            <a href="https://bitbucket.org/%7B59b1a85d-9327-4969-bdc4-689405ed3023%7D/"><i class="fa fa-bitbucket fa-2"></i></a>
+                            <a href="https://bitbucket.org/%7B59b1a85d-9327-4969-bdc4-689405ed3023%7D/"><i
+                                    class="fa fa-bitbucket fa-2"></i></a>
                         </p>
                     </div>
                 </div>
@@ -84,12 +93,15 @@
                     <div class="widget-body">
                         <p class="text-right">
                             Copyright &copy; 2020, Andrew Goacher<br>
-                            Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
+                            Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 </div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

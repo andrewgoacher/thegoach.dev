@@ -4,10 +4,19 @@
 
 <div class="row topspace">
     <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 maincontent">
-    <h2 class="section-title"><span>Sorry! No posts yet!</span></h2>
-        <h3></h3>
-        {{page|safe}}
-    </div>
+        {% for post in posts %}
+        <article class="post">
+            <header class="entry-header">
+                <div class="entry-meta">
+                    <span class="posted-on"><time class="entry-date published" date="{{post.posted}}">Posted: ({{post.posted}})</time></span>
+                </div>
+                <h1 class="entry-title"><a href="/blog/{{post.file}}" rel="bookmark">{{post.title}}</a></h1>
+            </header>
+            <div class="entry-content">
+                <p>{{post.description}}</p>
+            </div>
+        </article>
+        {% endfor %}
 </div>
 
 {% endblock content %}
