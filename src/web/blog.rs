@@ -1,7 +1,7 @@
 use rocket_contrib::templates::Template;
 use serde::Serialize;
 use rocket::{get, State};
-use crate::blog::BlogPost;
+use crate::blog::{BlogPost, BlogListing, AllBlogPostListings};
 use crate::cache::CacheMap;
 use crate::web::PageCache;
 
@@ -10,11 +10,21 @@ pub struct PostContext {
     post: BlogPost
 }
 
+#[derive(Serialize)]
+struct BlogListingContext {
+    posts: Vec<BlogListing>
+}
+
 pub type PostCache = CacheMap<PostContext>;
 
+fn create_blog_template(posts: Vec<BlogListing>) -> Template {
+    let context = BlogListingContext { posts };
+    Template::render("blog", &context)
+}
+
 #[get("/blog")]
-pub fn blog(cache: State<PageCache>) -> Option<Template> {
-    super::get_page_inner("blog", cache, "blog")
+pub fn blog(cache: State<AllBlogPostListings>) -> Option<Template> {
+    cache.cache_or_load("data/posts/posts.json").map(|posts| create_blog_template(posts))
 }
 
 fn create_blog_post_page(post_context: PostContext) -> Template {
