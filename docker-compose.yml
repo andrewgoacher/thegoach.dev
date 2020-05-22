@@ -17,3 +17,4 @@ services:
     restart: always
     environment:
       DOMAINS: 'thegoach.dev -> http://app:8000, www.thegoach.dev => thegoach.dev'
+      STAGE: ${ROCKET_ENV}
