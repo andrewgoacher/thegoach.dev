@@ -2,7 +2,7 @@ version: '2'
 
 services:
   app:
-    image: registry.gitlab.com/andrewgoacher/thegoach.dev/website:web
+    image: registry.gitlab.com/andrewgoacher/thegoach.dev:web
     environment:
       ROCKET_ENV: ${ROCKET_ENV}
   https-portal:
