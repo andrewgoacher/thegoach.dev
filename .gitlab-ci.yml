@@ -42,6 +42,6 @@ deploy:
     - eval "$(ssh-agent -s)"
     - ssh-add ~/.ssh/id_rsa
     - ssh-keyscan -H 'gitlab.com' >> ~/.ssh/known_hosts
+    - scp  -o StrictHostKeyChecking=no -r ./.env ./docker-compose.yml ./deploy.sh $SSH_USER@$DIGITAL_OCEAN_IP_ADDRESS:/app
     - chmod +x ./deploy.sh
-    - scp  -o StrictHostKeyChecking=no -r ./.env ./docker-compose.yml $SSH_USER@$DIGITAL_OCEAN_IP_ADDRESS:/app
     - bash ./deploy.sh
