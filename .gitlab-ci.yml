@@ -26,8 +26,8 @@ build:
     refs:
       - master
   script:
-    - docker build -t $IMAGE:web .
-    - docker push $IMAGE:web
+    - docker build -t $IMAGE .
+    - docker push $IMAGE
 
 deploy:
   stage: deploy
