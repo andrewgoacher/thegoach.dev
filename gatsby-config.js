@@ -1,14 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `TheGoach.dev - Home of rants, waffles and weird opinions`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Andrew Goacher`,
+      summary: `I write here to give my friends respite.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A place for me to experiment and learn.`,
+    siteUrl: `https://thegoach.dev/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `the_goach`,
+      linkedin: `andrewgoacher`,
+      github: `andrewgoacher`,
+      gitlab: `andrewgocaher`,
+      bitbucker: `%7B59b1a85d-9327-4969-bdc4-689405ed3023%7D`,
     },
   },
   plugins: [
@@ -76,8 +80,5 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
