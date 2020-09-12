@@ -4,6 +4,7 @@ module.exports = {
     author: {
       name: `Andrew Goacher`,
       summary: `Software Developer\nneeds a website as his friends don't listen any more.`,
+      contact: 'goach@hey.com',
     },
     description: `A place for me to experiment and learn.`,
     siteUrl: `https://thegoach.dev/`,
