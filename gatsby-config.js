@@ -8,11 +8,11 @@ module.exports = {
     description: `A place for me to experiment and learn.`,
     siteUrl: `https://thegoach.dev/`,
     social: {
-      twitter: `the_goach`,
-      linkedin: `andrewgoacher`,
-      github: `andrewgoacher`,
-      gitlab: `andrewgocaher`,
-      bitbucker: `%7B59b1a85d-9327-4969-bdc4-689405ed3023%7D`,
+      twitter: `https://twitter.com/the_goach/`,
+      linkedin: `https://www.linkedin.com/in/andrewgoacher/`,
+      github: `https://github.com/andrewgoacher/`,
+      gitlab: `https://gitlab.com/andrewgocaher/`,
+      bitbucket: `https://bitbucket.org/%7B59b1a85d-9327-4969-bdc4-689405ed3023%7D/`,
     },
   },
   plugins: [
@@ -80,6 +80,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-      `gatsby-plugin-typescript`
+    `gatsby-plugin-typescript`,
   ],
-}
+};
