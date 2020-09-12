@@ -58,7 +58,6 @@ interface Frontmatter {
   description: string;
 }
 interface Node {
-  excerpt: string;
   fields: Fields;
   frontmatter: Frontmatter;
 }

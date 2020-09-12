@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: "2020-04-25T00:00:00.000Z"
-description: "Hello World"
+description: "Traditional first post with little substance but it gets the ball rolling"
 ---
 
 Over the last 10 years, I've tried and failed to run a personal blog.  On occasion, the failure has been in building the software, but quite often it's down to being a terrible blog author and not understanding that it takes time and practice to write.  My first attempt was a truly horrendous monstrosity of black backgrounds and cyan text running on PHP with a handy module called cute news.  Since then, I've run multiple WordPress sites, I've tried Drupal, Joomla and even (I think) a very brief fling with DotNetNuke.
