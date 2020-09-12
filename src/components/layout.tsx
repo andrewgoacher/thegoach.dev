@@ -4,6 +4,7 @@ import '../styles/style.css';
 import SocialWidget from './social-widget';
 import Navigation from './Navigation';
 import HeadBanner from './HeadBanner';
+import CopyrightFooter from './CopyrightFooter';
 
 const Layout = ({ children }: any) => {
   return (
@@ -39,25 +40,7 @@ const Layout = ({ children }: any) => {
           </div>
         </footer>
 
-        <footer id='underfooter'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-md-6 widget'></div>
-              <div className='col-md-6 widget'>
-                <div className='widget-body'>
-                  <p className='text-right'>
-                    Copyright &copy; 2020, Andrew Goacher
-                    <br />
-                    Design:{' '}
-                    <a href='http://www.gettemplate.com' rel='designer'>
-                      Initio by GetTemplate
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
+        <CopyrightFooter />
       </div>
 
       <script
