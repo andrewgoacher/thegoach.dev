@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `TheGoach.dev - Home of rants, waffles and weird opinions`,
+    title: `TheGoach.dev`,
     author: {
       name: `Andrew Goacher`,
       summary: `I write here to give my friends respite.`,

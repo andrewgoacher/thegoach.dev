@@ -6,40 +6,33 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 interface SEOProps {
-  description?: string;
-  lang: string;
-  meta?: any;
   title: string;
 }
 
-const SEO = ({ description, lang, meta, title }: SEOProps) => {
-  const { site } = useStaticQuery(
+const SEO = ({ title }: SEOProps) => {
+  const { site }: Query = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
             description
-            social {
-              twitter
-            }
           }
         }
       }
     `,
   );
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = site.siteMetadata.description;
 
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: 'en',
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
@@ -60,38 +53,38 @@ const SEO = ({ description, lang, meta, title }: SEOProps) => {
           property: `og:type`,
           content: `website`,
         },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.social.twitter,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
+        // {
+        //   name: `twitter:card`,
+        //   content: `summary`,
+        // },
+        // {
+        //   name: `twitter:creator`,
+        //   content: site.siteMetadata.social.twitter,
+        // },
+        // {
+        //   name: `twitter:title`,
+        //   content: title,
+        // },
+        // {
+        //   name: `twitter:description`,
+        //   content: metaDescription,
+        // },
+      ]}
     />
   );
 };
 
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-};
+interface SiteMetadata {
+  title: string;
+  description: string;
+}
 
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-};
+interface Site {
+  siteMetadata: SiteMetadata;
+}
+
+interface Query {
+  site: Site;
+}
 
 export default SEO;
