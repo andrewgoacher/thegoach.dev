@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import '../styles/style.css';
+import SocialWidget from './social-widget';
 
 const Layout = ({ children }: any) => {
   return (
@@ -71,28 +72,7 @@ const Layout = ({ children }: any) => {
                 </div>
               </div>
 
-              <div className='col-md-3 widget'>
-                <h3 className='widget-title'>Follow me</h3>
-                <div className='widget-body'>
-                  <p className='follow-me-icons'>
-                    <a href='https://twitter.com/the_goach'>
-                      <i className='fa fa-twitter fa-2'></i>
-                    </a>
-                    <a href='https://www.linkedin.com/in/andrewgoacher/'>
-                      <i className='fa fa-linkedin fa-2'></i>
-                    </a>
-                    <a href='https://github.com/andrewgoacher/'>
-                      <i className='fa fa-github fa-2'></i>
-                    </a>
-                    <a href='https://gitlab.com/andrewgoacher'>
-                      <i className='fa fa-gitlab fa-2'></i>
-                    </a>
-                    <a href='https://bitbucket.org/%7B59b1a85d-9327-4969-bdc4-689405ed3023%7D/'>
-                      <i className='fa fa-bitbucket fa-2'></i>
-                    </a>
-                  </p>
-                </div>
-              </div>
+              <SocialWidget />
             </div>
           </div>
         </footer>
