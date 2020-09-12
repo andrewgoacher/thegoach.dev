@@ -3,7 +3,26 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const Index = () => {
+interface RecentPostProps {
+  node: Node;
+}
+const RecentPost = ({ node }: RecentPostProps) => {
+  return (
+    <div className='col-sm-6 col-md-3'>
+      <h3 className='text-center'>{node.frontmatter.title}</h3>
+      <p>Posted: ({node.frontmatter.date})</p>
+      <p>{node.frontmatter.description}</p>
+      <p className='text-center'>
+        <a href={`/blog/${node.fields.slug}`} className='btn btn-action'>
+          Read more
+        </a>
+      </p>
+    </div>
+  );
+};
+
+const Index = ({ data }: any) => {
+  const nodes = data.allMarkdownRemark.edges;
   return (
     <Layout>
       <SEO title={'Home'} />
@@ -22,97 +41,54 @@ const Index = () => {
           <span>Recent Posts</span>
         </h2>
         <div className='row'>
-          {/*{% for post in posts %}*/}
-          {/*<div className="col-sm-6 col-md-3">*/}
-          {/*    <h3 className="text-center">{{post.title}}</h3>*/}
-          {/*    <p>Posted: ({{post.posted}})</p>*/}
-          {/*    <p>{{post.description}}</p>*/}
-          {/*    <p className="text-center"><a href="/blog/{{post.file}}" className="btn btn-action">Read more</a></p>*/}
-          {/*</div>*/}
-          {/*{% endfor %}*/}
+          {nodes.map((n: Post, i: number) => {
+            return <RecentPost node={n.node} key={i} />;
+          })}
         </div>
       </div>
     </Layout>
   );
 };
-
-// import Bio from '../components/bio';
-// import Layout from '../components/layout';
-// import SEO from '../components/seo';
-// import { rhythm } from '../utils/typography';
-
-// interface BlogProps {
-//   data: any;
-//   location: any;
-// }
-//
-// interface BlogPost {
-//   node: any;
-// }
-//
-// const BlogIndex = ({ data, location }: BlogProps) => {
-//   const siteTitle = data.site.siteMetadata.title;
-//   const posts = data.allMarkdownRemark.edges;
-//
-//   return (
-//     <Layout location={location} title={siteTitle}>
-//       <SEO title='All posts' />
-//       <Bio />
-//       {posts.map(({ node }: BlogPost) => {
-//         const title = node.frontmatter.title || node.fields.slug;
-//         return (
-//           <article key={node.fields.slug}>
-//             <header>
-//               <h3
-//                 style={{
-//                   marginBottom: rhythm(1 / 4),
-//                 }}
-//               >
-//                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-//                   {title}
-//                 </Link>
-//               </h3>
-//               <small>{node.frontmatter.date}</small>
-//             </header>
-//             <section>
-//               <p
-//                 dangerouslySetInnerHTML={{
-//                   __html: node.frontmatter.description || node.excerpt,
-//                 }}
-//               />
-//             </section>
-//           </article>
-//         );
-//       })}
-//     </Layout>
-//   );
-// };
-//
-// export default BlogIndex;
-//
-// export const pageQuery = graphql`
-//   query {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-//       edges {
-//         node {
-//           excerpt
-//           fields {
-//             slug
-//           }
-//           frontmatter {
-//             date(formatString: "MMMM DD, YYYY")
-//             title
-//             description
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
+interface Fields {
+  slug: string;
+}
+interface Frontmatter {
+  date: string;
+  title: string;
+  description: string;
+}
+interface Node {
+  excerpt: string;
+  fields: Fields;
+  frontmatter: Frontmatter;
+}
+interface Post {
+  node: Node;
+}
+interface Posts {
+  edges: Post[];
+}
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 6
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default Index;
