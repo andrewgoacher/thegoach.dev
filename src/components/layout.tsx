@@ -3,23 +3,14 @@ import { Link } from 'gatsby';
 import '../styles/style.css';
 import SocialWidget from './social-widget';
 import Navigation from './Navigation';
+import HeadBanner from './HeadBanner';
 
 const Layout = ({ children }: any) => {
   return (
     <>
       <div className='wrap'>
         <header id='header'>
-          <div id='head' className='parallax' parallax-speed='2'>
-            <h1 id='logo' className='text-center'>
-              <img className='img-circle' src='/images/me.jpg' alt='' />
-              <span className='title'>Andrew Goacher</span>
-              <span className='tagline'>
-                Software Developer
-                <br />
-                needs a website as his friends don't listen any more.
-              </span>
-            </h1>
-          </div>
+          <HeadBanner />
           <Navigation />
         </header>
         <main id='main'>
