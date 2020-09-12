@@ -40,7 +40,7 @@ const BlogPost = ({ post }: BlogPostProp) => {
           </span>
         </div>
         <h1 className='entry-title'>
-          <a href={`/blog/${post.fields.slug}`} rel='bookmark'>
+          <a href={`/blog${post.fields.slug}`} rel='bookmark'>
             {post.frontmatter.title}
           </a>
         </h1>

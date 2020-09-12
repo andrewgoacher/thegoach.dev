@@ -8,25 +8,20 @@ import { rhythm, scale } from '../utils/typography';
 interface BlogPostTemplateProps {
   data: any;
   pageContext: any;
-  location: any;
 }
 
-const BlogPostTemplate = ({
-  data,
-  pageContext,
-  location,
-}: BlogPostTemplateProps) => {
+const BlogPostTemplate = ({ data, pageContext }: BlogPostTemplateProps) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        // description={post.frontmatter.description || post.excerpt}
       />
-      <article>
+      <article className='row topspace'>
         <header>
           <h1
             style={{
@@ -46,41 +41,43 @@ const BlogPostTemplate = ({
             {post.frontmatter.date}
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div
+          className='col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 maincontent'
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
         <hr
           style={{
             marginBottom: rhythm(1),
           }}
         />
-        <footer></footer>
       </article>
 
-      <nav>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel='prev'>
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel='next'>
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+      {/*<nav>*/}
+      {/*  <ul*/}
+      {/*    style={{*/}
+      {/*      display: `flex`,*/}
+      {/*      flexWrap: `wrap`,*/}
+      {/*      justifyContent: `space-between`,*/}
+      {/*      listStyle: `none`,*/}
+      {/*      padding: 0,*/}
+      {/*    }}*/}
+      {/*  >*/}
+      {/*    <li>*/}
+      {/*      {previous && (*/}
+      {/*        <Link to={previous.fields.slug} rel='prev'>*/}
+      {/*          ← {previous.frontmatter.title}*/}
+      {/*        </Link>*/}
+      {/*      )}*/}
+      {/*    </li>*/}
+      {/*    <li>*/}
+      {/*      {next && (*/}
+      {/*        <Link to={next.fields.slug} rel='next'>*/}
+      {/*          {next.frontmatter.title} →*/}
+      {/*        </Link>*/}
+      {/*      )}*/}
+      {/*    </li>*/}
+      {/*  </ul>*/}
+      {/*</nav>*/}
     </Layout>
   );
 };
@@ -106,3 +103,29 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+interface Frontmatter {
+  title: string;
+  date: string;
+  description: string;
+}
+
+interface Post {
+  id: string;
+  excerpt: string;
+  html: string;
+  frontmatter: Frontmatter;
+}
+
+interface SiteMetadata {
+  title: string;
+}
+
+interface Site {
+  siteMetadata: SiteMetadata;
+}
+
+interface Query {
+  site: Site;
+  markdownRemark: Post;
+}

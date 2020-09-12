@@ -13,7 +13,7 @@ const RecentPost = ({ node }: RecentPostProps) => {
       <p>Posted: ({node.frontmatter.date})</p>
       <p>{node.frontmatter.description}</p>
       <p className='text-center'>
-        <a href={`/blog/${node.fields.slug}`} className='btn btn-action'>
+        <a href={`/blog${node.fields.slug}`} className='btn btn-action'>
           Read more
         </a>
       </p>
