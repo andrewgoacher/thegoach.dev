@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'gatsby';
 import '../styles/style.css';
 import SocialWidget from './social-widget';
-import Navigation from './Navigation';
-import HeadBanner from './HeadBanner';
-import CopyrightFooter from './CopyrightFooter';
-import ContactWidget from './ContactWidget';
+import Navigation from './navigation';
+import HeadBanner from './head-banner';
+import CopyrightFooter from './copyright-footer';
+import ContactWidget from './contact-widget';
 
 const Layout = ({ children }: any) => {
   return (
