@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'gatsby';
 import '../styles/style.css';
 import SocialWidget from './social-widget';
+import Navigation from './Navigation';
 
 const Layout = ({ children }: any) => {
   return (
-    <div>
+    <>
       <div className='wrap'>
         <header id='header'>
           <div id='head' className='parallax' parallax-speed='2'>
@@ -19,37 +20,7 @@ const Layout = ({ children }: any) => {
               </span>
             </h1>
           </div>
-          <nav className='navbar navbar-default '>
-            <div className='container-fluid'>
-              <div className='navbar-header'>
-                <button
-                  type='button'
-                  className='navbar-toggle collapsed'
-                  data-toggle='collapse'
-                  data-target='#target'
-                  aria-expanded='false'
-                >
-                  <span className='sr-only'>Toggle navigation</span>
-                  <span className='icon-bar'></span>
-                  <span className='icon-bar'></span>
-                  <span className='icon-bar'></span>
-                </button>
-              </div>
-              <div className='collapse navbar-collapse' id='target'>
-                <ul className='nav navbar-nav'>
-                  <li className='active'>
-                    <a href='/'>Home</a>
-                  </li>
-                  <li>
-                    <a href='/about'>About</a>
-                  </li>
-                  <li>
-                    <a href='/blog'>Blog</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+          <Navigation />
         </header>
         <main id='main'>
           <div className='container'>{children}</div>
@@ -108,7 +79,7 @@ const Layout = ({ children }: any) => {
         integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa'
         crossOrigin='anonymous'
       ></script>
-    </div>
+    </>
   );
 };
 

@@ -11,7 +11,7 @@ body {
     padding: 0;
 }
 
-html, body {
+html, body, #___gatsby, #gatsby-focus-wrapper {
     height: 100%;
 }
 
@@ -88,9 +88,9 @@ html, body {
     background-color: #ffffff;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > li > a.active,
+.navbar-default .navbar-nav > li > a.active:hover,
+.navbar-default .navbar-nav > li > a.active:focus {
     color: #000000;
     background-color: #ffffff;
 }
@@ -285,16 +285,16 @@ a:hover {
     color: #5E5E5E;
 }
 
- #head {
+.home #head {
     padding: 90px 0;
 }
 
- #head .title {
+.home #head .title {
     font-size: 49px;
     font-size: 3.0625rem;
 }
 
- #head .tagline {
+.home #head .tagline {
     font-size: 16px;
     font-size: 1rem;
     margin: 15px 0 0;
