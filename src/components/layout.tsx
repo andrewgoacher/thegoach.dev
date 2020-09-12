@@ -5,6 +5,7 @@ import SocialWidget from './social-widget';
 import Navigation from './Navigation';
 import HeadBanner from './HeadBanner';
 import CopyrightFooter from './CopyrightFooter';
+import ContactWidget from './ContactWidget';
 
 const Layout = ({ children }: any) => {
   return (
@@ -23,18 +24,7 @@ const Layout = ({ children }: any) => {
         <footer id='footer'>
           <div className='container'>
             <div className='row'>
-              <div className='col-md-3 widget'>
-                <h3 className='widget-title'>Contact</h3>
-                <div className='widget-body'>
-                  <p>
-                    <a href='mailto:andrewgoacher@outlook.com'>
-                      andrewgoacher@outlook.com
-                    </a>
-                    <br />
-                  </p>
-                </div>
-              </div>
-
+              <ContactWidget />
               <SocialWidget />
             </div>
           </div>
