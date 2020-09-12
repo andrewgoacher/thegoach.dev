@@ -22,7 +22,7 @@ const BlogPostTemplate = ({ data, pageContext }: BlogPostTemplateProps) => {
         // description={post.frontmatter.description || post.excerpt}
       />
       <article className='row topspace'>
-        <header>
+        <header className='col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 main content'>
           <h1
             style={{
               marginTop: rhythm(1),
@@ -42,14 +42,14 @@ const BlogPostTemplate = ({ data, pageContext }: BlogPostTemplateProps) => {
           </p>
         </header>
         <div
-          className='col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 maincontent'
+          className='col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 main content'
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        {/*<hr*/}
+        {/*  style={{*/}
+        {/*    marginBottom: rhythm(1),*/}
+        {/*  }}*/}
+        {/*/>*/}
       </article>
 
       {/*<nav>*/}
