@@ -25,11 +25,6 @@ export default function HTML(props) {
           rel='stylesheet'
           href='https://use.fontawesome.com/231e949c39.css'
         />
-        <script
-          data-ad-client='ca-pub-3721557215391947'
-          async
-          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-        />
         {props.headComponents}
       </head>
       <body className={'home'} {...props.bodyAttributes}>
