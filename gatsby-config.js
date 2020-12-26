@@ -3,8 +3,8 @@ module.exports = {
     title: `TheGoach.dev`,
     author: {
       name: `Andrew Goacher`,
-      summary: `Software Developer\nneeds a website as his friends don't listen any more.`,
-      contact: 'goach@hey.com',
+      summary: `Software Developer\nNeeds a website as his friends don't listen any more.`,
+      contact: 'andrewgoacher@outlook.com',
     },
     description: `A place for me to experiment and learn.`,
     siteUrl: `https://thegoach.dev/`,
@@ -55,25 +55,24 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
-    `gatsby-plugin-feed`,
     // {
-    //   resolve: `gatsby-plugin-manifest`,
+    //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
-    //     name: `Gatsby Starter Blog`,
-    //     short_name: `GatsbyJS`,
-    //     start_url: `/`,
-    //     background_color: `#ffffff`,
-    //     theme_color: `#663399`,
-    //     display: `minimal-ui`,
-    //     icon: `content/assets/gatsby-icon.png`,
+    //     //trackingId: `ADD YOUR TRACKING ID HERE`,
     //   },
     // },
+    `gatsby-plugin-feed`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Home of the goach`,
+        short_name: `thegoach.dev`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
