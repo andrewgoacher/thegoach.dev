@@ -22,21 +22,9 @@ const Navigation = () => {
         </div>
         <div className='collapse navbar-collapse' id='target'>
           <ul className='nav navbar-nav'>
-            <li>
-              <Link to={'/'} activeClassName={'active'}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to={'/about'} activeClassName={'active'}>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to={'/blog'} activeClassName={'active'}>
-                Blog
-              </Link>
-            </li>
+            <NavLink to={'/'}>
+              Home
+            </NavLink>
           </ul>
         </div>
       </div>
@@ -45,3 +33,16 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
+interface LinkProps {
+  to: string;
+  children: string;
+}
+
+const NavLink = ({to, children}: LinkProps) => {
+  return <li>
+    <Link to={to} activeClassName={'active'}>
+      {children}
+    </Link>
+  </li>
+}
