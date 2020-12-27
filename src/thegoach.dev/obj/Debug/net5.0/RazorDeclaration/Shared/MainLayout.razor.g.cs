@@ -82,6 +82,13 @@ using thegoach.dev.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "/Users/goach/dev/thegoach.dev/src/thegoach.dev/_Imports.razor"
+using thegoach.dev.Components;
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998

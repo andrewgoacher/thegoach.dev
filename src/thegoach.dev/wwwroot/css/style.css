@@ -11,7 +11,7 @@ body {
     padding: 0;
 }
 
-html, body, #___gatsby, #gatsby-focus-wrapper {
+html, body, #app, #gatsby-focus-wrapper {
     height: 100%;
 }
 

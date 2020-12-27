@@ -41,68 +41,167 @@
         }
       },
       {
-        "HashCode": 1848007296,
+        "HashCode": 742208057,
         "Kind": "Components.Component",
-        "Name": "thegoach.dev.Pages.Counter",
+        "Name": "thegoach.dev.Components.HeadBanner",
         "AssemblyName": "thegoach.dev",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "HeadBanner"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Pages.Counter"
+          "Common.TypeName": "thegoach.dev.Components.HeadBanner"
         }
       },
       {
-        "HashCode": -599709110,
+        "HashCode": -1606858263,
         "Kind": "Components.Component",
-        "Name": "thegoach.dev.Pages.Counter",
+        "Name": "thegoach.dev.Components.HeadBanner",
         "AssemblyName": "thegoach.dev",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "thegoach.dev.Pages.Counter"
+            "TagName": "thegoach.dev.Components.HeadBanner"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Pages.Counter",
+          "Common.TypeName": "thegoach.dev.Components.HeadBanner",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 977084212,
+        "HashCode": -1299854803,
         "Kind": "Components.Component",
-        "Name": "thegoach.dev.Pages.FetchData",
+        "Name": "thegoach.dev.Components.Navigation",
         "AssemblyName": "thegoach.dev",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "FetchData"
+            "TagName": "Navigation"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Pages.FetchData"
+          "Common.TypeName": "thegoach.dev.Components.Navigation"
         }
       },
       {
-        "HashCode": -2125896354,
+        "HashCode": 270028103,
         "Kind": "Components.Component",
-        "Name": "thegoach.dev.Pages.FetchData",
+        "Name": "thegoach.dev.Components.Navigation",
         "AssemblyName": "thegoach.dev",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "thegoach.dev.Pages.FetchData"
+            "TagName": "thegoach.dev.Components.Navigation"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Pages.FetchData",
+          "Common.TypeName": "thegoach.dev.Components.Navigation",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -747994557,
+        "Kind": "Components.Component",
+        "Name": "thegoach.dev.Components.Social",
+        "AssemblyName": "thegoach.dev",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Social"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "thegoach.dev.Components.Social"
+        }
+      },
+      {
+        "HashCode": 431565407,
+        "Kind": "Components.Component",
+        "Name": "thegoach.dev.Components.Social",
+        "AssemblyName": "thegoach.dev",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "thegoach.dev.Components.Social"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "thegoach.dev.Components.Social",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1687631585,
+        "Kind": "Components.Component",
+        "Name": "thegoach.dev.Components.Contact",
+        "AssemblyName": "thegoach.dev",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Contact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "thegoach.dev.Components.Contact"
+        }
+      },
+      {
+        "HashCode": 711045077,
+        "Kind": "Components.Component",
+        "Name": "thegoach.dev.Components.Contact",
+        "AssemblyName": "thegoach.dev",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "thegoach.dev.Components.Contact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "thegoach.dev.Components.Contact",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1311417679,
+        "Kind": "Components.Component",
+        "Name": "thegoach.dev.Components.CopyrightFooter",
+        "AssemblyName": "thegoach.dev",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CopyrightFooter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "thegoach.dev.Components.CopyrightFooter"
+        }
+      },
+      {
+        "HashCode": -1233268444,
+        "Kind": "Components.Component",
+        "Name": "thegoach.dev.Components.CopyrightFooter",
+        "AssemblyName": "thegoach.dev",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "thegoach.dev.Components.CopyrightFooter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "thegoach.dev.Components.CopyrightFooter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -136,59 +235,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "thegoach.dev.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1763317689,
-        "Kind": "Components.Component",
-        "Name": "thegoach.dev.Shared.SurveyPrompt",
-        "AssemblyName": "thegoach.dev",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": -1072926259,
-        "Kind": "Components.Component",
-        "Name": "thegoach.dev.Shared.SurveyPrompt",
-        "AssemblyName": "thegoach.dev",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "thegoach.dev.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -285,39 +331,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "thegoach.dev.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1765884981,
-        "Kind": "Components.Component",
-        "Name": "thegoach.dev.Shared.NavMenu",
-        "AssemblyName": "thegoach.dev",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": 205000307,
-        "Kind": "Components.Component",
-        "Name": "thegoach.dev.Shared.NavMenu",
-        "AssemblyName": "thegoach.dev",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "thegoach.dev.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -12975,8 +12988,18 @@
   "RootNamespace": "thegoach.dev",
   "Documents": [
     {
-      "FilePath": "/Users/goach/dev/thegoach.dev/src/thegoach.dev/Shared/SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FilePath": "/Users/goach/dev/thegoach.dev/src/thegoach.dev/Components/CopyrightFooter.razor",
+      "TargetPath": "Components\\CopyrightFooter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/goach/dev/thegoach.dev/src/thegoach.dev/Components/HeadBanner.razor",
+      "TargetPath": "Components\\HeadBanner.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/goach/dev/thegoach.dev/src/thegoach.dev/Components/Contact.razor",
+      "TargetPath": "Components\\Contact.razor",
       "FileKind": "component"
     },
     {
@@ -12990,13 +13013,18 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "/Users/goach/dev/thegoach.dev/src/thegoach.dev/Components/Navigation.razor",
+      "TargetPath": "Components\\Navigation.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "/Users/goach/dev/thegoach.dev/src/thegoach.dev/App.razor",
       "TargetPath": "App.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/goach/dev/thegoach.dev/src/thegoach.dev/Shared/NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
+      "FilePath": "/Users/goach/dev/thegoach.dev/src/thegoach.dev/Components/Social.razor",
+      "TargetPath": "Components\\Social.razor",
       "FileKind": "component"
     },
     {

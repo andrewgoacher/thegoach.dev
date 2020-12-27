@@ -1,0 +1,25 @@
+<div className='col-md-3 widget'>
+    <h3 className='widget-title'>Follow me</h3>
+    <div className='widget-body'>
+        <p className='follow-me-icons'>
+            @foreach (var social in _social)
+            {
+                <a href="@social.Value">
+                    <i class="fa fa-@social.Key fa-2"></i>
+                </a>
+            }
+        </p>
+    </div>
+</div>
+
+@code
+{
+    private Dictionary<string, string> _social = new Dictionary<string, string>
+    {
+        {"twitter", "https://twitter.com/the_goach/"},
+        {"linkedin", "https://www.linkedin.com/in/andrewgoacher/"},
+        {"github", "https://github.com/andrewgoacher/"},
+        {"gitlab", "https://gitlab.com/andrewgocaher/"},
+        {"bitbucket", "https://bitbucket.org/%7B59b1a85d-9327-4969-bdc4-689405ed3023%7D/"}
+    };
+}
