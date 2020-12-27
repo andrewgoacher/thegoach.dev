@@ -41,39 +41,6 @@
         }
       },
       {
-        "HashCode": 742208057,
-        "Kind": "Components.Component",
-        "Name": "thegoach.dev.Components.HeadBanner",
-        "AssemblyName": "thegoach.dev",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "HeadBanner"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Components.HeadBanner"
-        }
-      },
-      {
-        "HashCode": -1606858263,
-        "Kind": "Components.Component",
-        "Name": "thegoach.dev.Components.HeadBanner",
-        "AssemblyName": "thegoach.dev",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "thegoach.dev.Components.HeadBanner"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Components.HeadBanner",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1299854803,
         "Kind": "Components.Component",
         "Name": "thegoach.dev.Components.Navigation",
@@ -107,35 +74,68 @@
         }
       },
       {
-        "HashCode": -747994557,
+        "HashCode": 742208057,
         "Kind": "Components.Component",
-        "Name": "thegoach.dev.Components.Social",
+        "Name": "thegoach.dev.Components.HeadBanner",
         "AssemblyName": "thegoach.dev",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Social"
+            "TagName": "HeadBanner"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Components.Social"
+          "Common.TypeName": "thegoach.dev.Components.HeadBanner"
         }
       },
       {
-        "HashCode": 431565407,
+        "HashCode": -1606858263,
         "Kind": "Components.Component",
-        "Name": "thegoach.dev.Components.Social",
+        "Name": "thegoach.dev.Components.HeadBanner",
         "AssemblyName": "thegoach.dev",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "thegoach.dev.Components.Social"
+            "TagName": "thegoach.dev.Components.HeadBanner"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Components.Social",
+          "Common.TypeName": "thegoach.dev.Components.HeadBanner",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1311417679,
+        "Kind": "Components.Component",
+        "Name": "thegoach.dev.Components.CopyrightFooter",
+        "AssemblyName": "thegoach.dev",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CopyrightFooter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "thegoach.dev.Components.CopyrightFooter"
+        }
+      },
+      {
+        "HashCode": -1233268444,
+        "Kind": "Components.Component",
+        "Name": "thegoach.dev.Components.CopyrightFooter",
+        "AssemblyName": "thegoach.dev",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "thegoach.dev.Components.CopyrightFooter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "thegoach.dev.Components.CopyrightFooter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -173,35 +173,35 @@
         }
       },
       {
-        "HashCode": -1311417679,
+        "HashCode": -747994557,
         "Kind": "Components.Component",
-        "Name": "thegoach.dev.Components.CopyrightFooter",
+        "Name": "thegoach.dev.Components.Social",
         "AssemblyName": "thegoach.dev",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "CopyrightFooter"
+            "TagName": "Social"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Components.CopyrightFooter"
+          "Common.TypeName": "thegoach.dev.Components.Social"
         }
       },
       {
-        "HashCode": -1233268444,
+        "HashCode": 431565407,
         "Kind": "Components.Component",
-        "Name": "thegoach.dev.Components.CopyrightFooter",
+        "Name": "thegoach.dev.Components.Social",
         "AssemblyName": "thegoach.dev",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "thegoach.dev.Components.CopyrightFooter"
+            "TagName": "thegoach.dev.Components.Social"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "thegoach.dev.Components.CopyrightFooter",
+          "Common.TypeName": "thegoach.dev.Components.Social",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
